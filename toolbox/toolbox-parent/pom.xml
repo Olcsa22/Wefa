@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<packaging>pom</packaging>
+
+	<groupId>hu.lanoga</groupId>
+	<artifactId>toolbox-parent</artifactId>
+	<version>1.3.3-SNAPSHOT</version>
+
+	<name>Lanoga Toolbox Parent</name>
+	<description>Lanoga Toolbox Parent</description>
+
+	<organization>
+		<name>Lanoga</name>
+		<url>http://lanoga.hu/</url>
+	</organization>
+
+	<properties>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+
+		<vaadin.version>8.14.3</vaadin.version>
+		<vaadin.plugin.version>8.14.3</vaadin.plugin.version>
+
+		<amazon.sdk.version>1.12.401</amazon.sdk.version>
+
+		<!-- <hessian.version>4.0.60</hessian.version> -->
+
+		<commons.collections4.version>4.4</commons.collections4.version>
+
+		<!-- spring-boot-starter-parent-en belüli Tomcat verzió felülírható így: -->
+		<tomcat.version>9.0.71</tomcat.version>
+
+		<toolbox.dep.version>1.3.3-SNAPSHOT</toolbox.dep.version>
+
+		<lombok.version>1.18.26</lombok.version>
+
+		<logback.version>1.2.11</logback.version>
+		
+		<flyway.version>6.5.7</flyway.version>
+	</properties>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.7.8</version>
+		<relativePath />
+		<!-- ez kell, mert a default az, hogy a ./pom.xml a parant, az ures relativePath 
+			kiuti ezt... -->
+	</parent>
+
+	<dependencyManagement>
+		<dependencies>
+
+			<dependency>
+				<groupId>com.vaadin</groupId>
+				<artifactId>vaadin-bom</artifactId>
+				<version>${vaadin.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>com.amazonaws</groupId>
+				<artifactId>aws-java-sdk-bom</artifactId>
+				<version>${amazon.sdk.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>hu.lanoga</groupId>
+				<artifactId>toolbox</artifactId>
+				<version>${toolbox.dep.version}</version>
+			</dependency>
+
+			<!-- <dependency> -->
+			<!-- <groupId>org.springframework.security.oauth.boot</groupId> -->
+			<!-- <artifactId>spring-security-oauth2-autoconfigure</artifactId> -->
+			<!-- <version>2.1.4.RELEASE</version> -->
+			<!-- </dependency> -->
+
+			<!-- <dependency> -->
+			<!-- <groupId>com.caucho</groupId> -->
+			<!-- <artifactId>hessian</artifactId> -->
+			<!-- <version>${hessian.version}</version> -->
+			<!-- </dependency> -->
+
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-collections4</artifactId>
+				<version>${commons.collections4.version}</version>
+			</dependency>
+
+			<!-- <dependency> -->
+			<!-- <groupId>hu.lanoga</groupId> -->
+			<!-- <artifactId>toolbox-wspoke</artifactId> -->
+			<!-- <version>${toolbox.dep.version}</version> -->
+			<!-- </dependency> -->
+
+			<!-- <dependency> -->
+			<!-- <groupId>hu.lanoga</groupId> -->
+			<!-- <artifactId>toolbox-lucene</artifactId> -->
+			<!-- <version>${toolbox.dep.version}</version> -->
+			<!-- </dependency> -->
+
+			<!-- <dependency> -->
+			<!-- <groupId>hu.lanoga</groupId> -->
+			<!-- <artifactId>toolbox-xmpp-client-helper</artifactId> -->
+			<!-- <version>${toolbox.dep.version}</version> -->
+			<!-- </dependency> -->
+
+			<!-- <dependency> -->
+			<!-- <groupId>hu.lanoga</groupId> -->
+			<!-- <artifactId>toolbox-on-premise-helper</artifactId> -->
+			<!-- <version>${toolbox.dep.version}</version> -->
+			<!-- </dependency> -->
+
+			<dependency>
+				<groupId>hu.lanoga</groupId>
+				<artifactId>toolbox-test-helper</artifactId>
+				<version>${toolbox.dep.version}</version>
+				<scope>test</scope>
+			</dependency>
+
+			<!-- <dependency> -->
+			<!-- <groupId>hu.lanoga</groupId> -->
+			<!-- <artifactId>toolbox-selenium</artifactId> -->
+			<!-- <version>${toolbox.dep.version}</version> -->
+			<!-- </dependency> -->
+
+			<!-- <dependency> -->
+			<!-- <groupId>hu.lanoga</groupId> -->
+			<!-- <artifactId>toolbox-payment-paypal</artifactId> -->
+			<!-- <version>${toolbox.dep.version}</version> -->
+			<!-- </dependency> -->
+
+			<dependency>
+				<groupId>hu.lanoga</groupId>
+				<artifactId>toolbox-payment-cib</artifactId>
+				<version>${toolbox.dep.version}</version>
+			</dependency>
+
+			<!-- <dependency> -->
+			<!-- <groupId>hu.lanoga</groupId> -->
+			<!-- <artifactId>toolbox-payment-barion</artifactId> -->
+			<!-- <version>${toolbox.dep.version}</version> -->
+			<!-- </dependency> -->
+
+			<!-- <dependency> -->
+			<!-- <groupId>hu.lanoga</groupId> -->
+			<!-- <artifactId>toolbox-payment-payu</artifactId> -->
+			<!-- <version>${toolbox.dep.version}</version> -->
+			<!-- </dependency> -->
+
+			<dependency>
+				<groupId>hu.lanoga</groupId>
+				<artifactId>toolbox-payment-simplepay2</artifactId>
+				<version>${toolbox.dep.version}</version>
+			</dependency>
+
+			<!-- ennek kivetelesen kulon verzioja van -->
+			<!-- <dependency> -->
+			<!-- <groupId>hu.lanoga</groupId> -->
+			<!-- <artifactId>toolbox-payment-redis-com</artifactId> -->
+			<!-- <version>1.0.0-SNAPSHOT</version> -->
+			<!-- </dependency> -->
+
+		</dependencies>
+
+	</dependencyManagement>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.apache.maven.surefire</groupId>
+			<artifactId>surefire-junit47</artifactId>
+			<version>2.22.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>vaadin-addons</id>
+			<url>https://maven.vaadin.com/vaadin-addons</url>
+		</repository>
+
+		<repository>
+			<id>spring-plugins</id>
+			<url>https://repo.spring.io/plugins-release/</url>
+		</repository>
+
+		<!-- <repository> -->
+		<!-- <id>lanoga-snapshots</id> -->
+		<!-- <url>http://repo.lanoga.local/repository/snapshots</url> -->
+		<!-- <snapshots> -->
+		<!-- <enabled>true</enabled> -->
+		<!-- </snapshots> -->
+		<!-- <releases> -->
+		<!-- <enabled>false</enabled> -->
+		<!-- </releases> -->
+		<!-- </repository> -->
+		<!-- <repository> -->
+		<!-- <id>lanoga-releases</id> -->
+		<!-- <url>http://repo.lanoga.local/repository/internal</url> -->
+		<!-- <snapshots> -->
+		<!-- <enabled>false</enabled> -->
+		<!-- </snapshots> -->
+		<!-- <releases> -->
+		<!-- <enabled>true</enabled> -->
+		<!-- </releases> -->
+		<!-- </repository> -->
+
+	</repositories>
+
+	<!-- <distributionManagement> -->
+	<!-- <snapshotRepository> -->
+	<!-- <id>lanoga-snapshots</id> -->
+	<!-- <url>http://repo.lanoga.local/repository/snapshots</url> -->
+	<!-- </snapshotRepository> -->
+	<!-- <repository> -->
+	<!-- <id>lanoga-releases</id> -->
+	<!-- <url>http://repo.lanoga.local/repository/internal</url> -->
+	<!-- </repository> -->
+	<!-- </distributionManagement> -->
+
+	<build>
+
+		<pluginManagement>
+			<plugins>
+
+
+				<plugin>
+					<!-- használat: clean vaadin:update-theme vaadin:update-widgetset vaadin:compile 
+						vaadin:compile-theme install -->
+					<groupId>com.vaadin</groupId>
+					<artifactId>vaadin-maven-plugin</artifactId>
+					<version>${vaadin.plugin.version}</version>
+					<configuration>
+						<webappDirectory>${basedir}/src/main/resources/VAADIN/widgetsets/</webappDirectory>
+						<hostedWebapp>${basedir}/src/main/resources/VAADIN/widgetsets/</hostedWebapp>
+						<warSourceDirectory>${basedir}/src/main/resources/VAADIN/widgetsets/</warSourceDirectory>
+						<generatedWidgetsetDirectory>${basedir}/src/main/java</generatedWidgetsetDirectory>
+						<extraJvmArgs>-Xmx1G</extraJvmArgs>
+					</configuration>
+					<executions>
+						<execution>
+							<goals>
+								<goal>update-theme</goal>
+								<goal>update-widgetset</goal>
+								<goal>compile</goal>
+								<goal>compile-theme</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+
+				<!-- <plugin> -->
+				<!-- <groupId>org.apache.maven.plugins</groupId> -->
+				<!-- <artifactId>maven-javadoc-plugin</artifactId> -->
+				<!-- <configuration> -->
+				<!-- <additionalparam>-Xdoclint:none</additionalparam> -->
+				<!-- kikapcsolja az ellenorzeseket, pl. hianyos javadoc, lasd https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javadoc.html -->
+				<!-- html,syntax,reference -->
+				<!-- </configuration> -->
+				<!-- <executions> -->
+				<!-- <execution> -->
+				<!-- <id>attach-javadocs</id> -->
+				<!-- <goals> -->
+				<!-- <goal>jar</goal> -->
+				<!-- </goals> -->
+				<!-- </execution> -->
+				<!-- </executions> -->
+				<!-- </plugin> -->
+
+				<!-- használat (egy sorban kell lennie!): mvn clean frontend:install-node-and-npm@install-node-and-npm-1 
+					frontend:npm@npm-1 frontend:npm@npm-2 install -->
+				<!-- <plugin> -->
+				<!-- <groupId>com.github.eirslett</groupId> -->
+				<!-- <artifactId>frontend-maven-plugin</artifactId> -->
+				<!-- <version>1.5</version> -->
+				<!-- <configuration> -->
+				<!-- <workingDirectory>../client/</workingDirectory> -->
+				<!-- <installDirectory>target</installDirectory> -->
+				<!-- </configuration> -->
+				<!-- <executions> -->
+				<!-- <execution> -->
+				<!-- <phase>generate-resources</phase> -->
+				<!-- <id>install-node-and-npm-1</id> -->
+				<!-- <goals> -->
+				<!-- <goal>install-node-and-npm</goal> -->
+				<!-- </goals> -->
+				<!-- <configuration> -->
+				<!-- <nodeVersion>v8.10.0</nodeVersion> -->
+				<!-- <npmVersion>5.6.0</npmVersion> -->
+				<!-- </configuration> -->
+				<!-- </execution> -->
+				<!-- <execution> -->
+				<!-- <phase>generate-resources</phase> -->
+				<!-- <id>npm-1</id> -->
+				<!-- <goals> -->
+				<!-- <goal>npm</goal> -->
+				<!-- </goals> -->
+				<!-- <configuration> -->
+				<!-- <arguments>install</arguments> -->
+				<!-- </configuration> -->
+				<!-- </execution> -->
+				<!-- <execution> -->
+				<!-- <phase>generate-resources</phase> -->
+				<!-- <id>npm-2</id> -->
+				<!-- <goals> -->
+				<!-- <goal>npm</goal> -->
+				<!-- </goals> -->
+				<!-- <configuration> -->
+				<!-- <arguments>run build</arguments> -->
+				<!-- </configuration> -->
+				<!-- </execution> -->
+				<!-- </executions> -->
+				<!-- </plugin> -->
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<configuration>
+						<!-- csak azon teszt osztályok futnak (Maven által), amin ez a category 
+							rajta van... -->
+						<groups>hu.lanoga.toolbox.testhelper.MavenTest</groups>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>pl.project13.maven</groupId>
+					<artifactId>git-commit-id-plugin</artifactId>
+					<configuration>
+						<includeOnlyProperties>
+							<includeOnlyProperty>git.commit.id</includeOnlyProperty>
+							<includeOnlyProperty>git.commit.time</includeOnlyProperty>
+							<includeOnlyProperty>git.dirty</includeOnlyProperty>
+						</includeOnlyProperties>
+						<failOnNoGitDirectory>false</failOnNoGitDirectory>
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+					<executions>
+						<execution>
+							<goals>
+								<goal>build-info</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<excludeDevtools>true</excludeDevtools><!-- alap esetben is exclude 
+							true... biztos, ami biztos kiirtam -->
+					</configuration>
+				</plugin>
+
+				<plugin>
+					<groupId>org.owasp</groupId>
+					<artifactId>dependency-check-maven</artifactId>
+					<version>6.5.3</version>
+					<executions>
+						<execution>
+							<goals>
+								<goal>check</goal>
+							</goals>
+						</execution>
+					</executions>
+					<configuration>
+						<skipTestScope>true</skipTestScope>
+					</configuration>
+				</plugin>
+
+			</plugins>
+
+		</pluginManagement>
+
+	</build>
+
+</project>

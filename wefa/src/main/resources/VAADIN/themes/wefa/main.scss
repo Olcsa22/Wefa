@@ -1,0 +1,180 @@
+@mixin main {
+
+  .side-menu-min-width {
+    min-width: 1320px;
+  }
+
+  .text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .hide-with-visibility {
+    visibility: hidden;
+  }
+
+  .icon-button {
+    background: none !important;
+    border: none !important;
+  }
+
+  .avoid-clicks {
+    pointer-events: none;
+  }
+
+  .min-height-400px {
+    min-height: 400px;
+  }
+
+  .max-width-150px {
+    max-width: 150px;
+  }
+
+  .max-width-400px {
+    max-width: 400px;
+  }
+
+  .text-align-left {
+    text-align: left !important;
+  }
+
+  .text-align-right {
+    text-align: right !important;
+  }
+
+  .null-chk label:after {
+    content: '\e7a4' !important;
+    opacity: 0.5;
+    color: $v-selection-color !important;
+    font-family: Vaadin-Icons !important;
+  }
+
+  .v-button {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .valothemeui #themeSelect {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    padding: 0 10px;
+    background-color: #ededed;
+    background-color: rgba(237, 237, 237, 0.9);
+    color: #464646;
+    border-radius: 0 0 0 4px;
+  }
+
+  .valothemeui #themeSelect:before {
+    content: "Theme:";
+  }
+
+  .valothemeui #themeSelect select {
+    background: transparent;
+    color: inherit;
+    border: none;
+    display: inline-block;
+  }
+
+  .valothemeui .v-ui[width-range~="0-800px"] #themeSelect {
+    top: 37px;
+  }
+
+  .valothemeui .v-splitpanel-vertical,
+  .valothemeui .v-splitpanel-horizontal {
+    outline: 1px dotted rgba(128, 128, 128, 0.2);
+  }
+
+  .valothemeui .valo-content > .v-layout {
+    max-width: 960px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* ------ */
+
+  thead, tbody {
+    .v-grid-cell {
+      &::after,
+      &::before {
+        border: none !important;
+      }
+    }
+    .v-popupview {
+
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      .v-icon {
+        margin-right: 3px;
+      }
+
+      &.w-filtered {
+        color: $v-selection-color;
+      }
+
+      &::before {
+        content: '\e6a2' !important;
+        font-family: Vaadin-Icons !important;
+        padding-right: 5px;
+        display: inline-block;
+        opacity: 0.3;
+      }
+
+      &:hover::before {
+        opacity: 0.6;
+      }
+
+      &.w-filtered::before {
+        opacity: 1;
+      }
+
+    }
+  }
+
+  /* ------ */
+
+  .entry {
+    // palette
+    &.bpmn-icon-space-tool,
+    &.bpmn-icon-intermediate-event-none,
+    &.bpmn-icon-data-object,
+    &.bpmn-icon-data-store,
+    &.bpmn-icon-participant,
+    &.bpmn-icon-subprocess-expanded,
+    &.bpmn-icon-task,
+      // context menu task
+    &.bpmn-icon-send,
+    &.bpmn-icon-receive,
+    &.bpmn-icon-manual,
+    &.bpmn-icon-business-rule,
+    &.bpmn-icon-service,
+    &.bpmn-icon-call-activity,
+    &.bpmn-icon-subprocess-collapsed,
+      // context menu start event
+    &.bpmn-icon-start-event-message,
+    &.bpmn-icon-start-event-timer,
+    &.bpmn-icon-start-event-condition,
+    &.bpmn-icon-start-event-signal,
+      // context menu end event
+    &.bpmn-icon-end-event-message,
+    &.bpmn-icon-end-event-escalation,
+    &.bpmn-icon-end-event-error,
+    &.bpmn-icon-end-event-compensation,
+    &.bpmn-icon-end-event-signal,
+    &.bpmn-icon-end-event-terminate,
+      // context menu gateway
+    &.bpmn-icon-gateway-parallel,
+    &.bpmn-icon-gateway-complex,
+    &.bpmn-icon-gateway-eventbased {
+      display: none;
+    }
+  }
+}

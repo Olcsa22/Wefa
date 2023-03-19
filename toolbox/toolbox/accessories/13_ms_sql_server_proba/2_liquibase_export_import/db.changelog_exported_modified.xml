@@ -1,0 +1,1256 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-3.9.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.9.xsd">
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-1">
+        <createTable tableName="auth_user_info">
+            <column name="tenant_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="auth_user_info_pkey"/>
+            </column>
+            <column name="user_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_of_birth" type="date"/>
+            <column name="email" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="title" type="VARCHAR(50)"/>
+            <column name="family_name" type="VARCHAR(100)"/>
+            <column name="given_name" type="VARCHAR(100)"/>
+            <column name="job_title" type="VARCHAR(50)"/>
+            <column name="phone_number" type="VARCHAR(100)"/>
+            <column name="created_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-2">
+        <createTable tableName="email">
+            <column name="tenant_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="email_pkey"/>
+            </column>
+            <column name="from_email" type="VARCHAR(255)"/>
+            <column name="to_email" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="subject" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="body" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueBoolean="false" name="is_plain_text" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="attempt" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="error_message" type="TEXT"/>
+            <column name="created_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="file_ids" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-3">
+        <createTable tableName="tenant_info">
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="tenant_info_pkey"/>
+            </column>
+            <column name="tenant_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="email" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone" type="VARCHAR(30)"/>
+            <column name="created_by" type="INTEGER"/>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER"/>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="company_tax_number" type="VARCHAR(50)"/>
+            <column name="company_registration_number" type="VARCHAR(50)"/>
+            <column name="company_bank_account_number" type="VARCHAR(50)"/>
+            <column name="company_address_country" type="CHAR(2)"/>
+            <column name="company_address_state" type="VARCHAR(50)"/>
+            <column name="company_address_county" type="VARCHAR(50)"/>
+            <column name="company_address_zip_code" type="VARCHAR(10)"/>
+            <column name="company_address_details" type="VARCHAR(50)"/>
+            <column name="contact_name" type="VARCHAR(50)"/>
+            <column name="note" type="VARCHAR(500)"/>
+            <column name="extra_data_1" type="VARCHAR(100)"/>
+            <column name="extra_data_2" type="VARCHAR(100)"/>
+            <column name="extra_data_3" type="VARCHAR(100)"/>
+            <column name="extra_data_4" type="INTEGER"/>
+            <column name="file_ids" type="TEXT"/>
+            <column name="file_ids_2" type="TEXT"/>
+            <column name="file_ids_3" type="TEXT"/>
+            <column name="company_name" type="VARCHAR(200)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-4">
+        <createTable tableName="persistent_login">
+            <column name="series" type="VARCHAR(64)">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="persistent_login_pkey"/>
+            </column>
+            <column name="token_value" type="VARCHAR(64)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="username" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-5">
+        <createTable tableName="auth_token">
+            <column name="tenant_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="auth_token_pkey"/>
+            </column>
+            <column name="token_type" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="token" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="valid_until" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="resource_id1" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="resource_id2" type="INTEGER"/>
+            <column name="note1" type="VARCHAR(200)"/>
+            <column name="note2" type="VARCHAR(200)"/>
+            <column name="note3" type="VARCHAR(200)"/>
+            <column name="created_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-6">
+        <createTable tableName="ip2location_db11">
+            <column name="ip_from" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ip_to" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="country_code" type="CHAR(2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="country_name" type="VARCHAR(64)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="region_name" type="VARCHAR(128)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="city_name" type="VARCHAR(128)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="latitude" type="FLOAT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="longitude" type="FLOAT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="zip_code" type="VARCHAR(30)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="time_zone" type="VARCHAR(8)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-7">
+        <createTable tableName="tenant_key_value_settings">
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="tenant_key_value_settings_pkey"/>
+            </column>
+            <column name="tenant_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="kv_key" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="kv_value" type="VARCHAR(100)"/>
+            <column name="created_by" type="INTEGER"/>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER"/>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="kv_long_text" type="TEXT"/>
+            <column defaultValueBoolean="true" name="manual_edit_allowed" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-8">
+        <createTable tableName="holiday">
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="holiday_pkey"/>
+            </column>
+            <column name="event_date" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="summary" type="VARCHAR(160)"/>
+            <column name="workday" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="event_country" type="VARCHAR(100)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-9">
+        <createTable tableName="payment_config">
+            <column name="tenant_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="payment_config_pkey"/>
+            </column>
+            <column name="payment_provider" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="config_json" type="TEXT"/>
+            <column name="file_ids" type="TEXT"/>
+            <column defaultValueBoolean="false" name="use_global_config" type="BOOLEAN"/>
+            <column defaultValueBoolean="false" name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-10">
+        <createTable tableName="tenant">
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="tenant_pkey"/>
+            </column>
+            <column name="name" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueBoolean="true" name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueBoolean="false" name="anonymized_deleted" type="BOOLEAN"/>
+            <column name="created_by" type="INTEGER"/>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER"/>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="brand" type="VARCHAR(50)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-11">
+        <createTable tableName="code_store_item">
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="code_store_item_pkey"/>
+            </column>
+            <column name="code_store_type_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="caption" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="command" type="VARCHAR(50)"/>
+            <column defaultValueBoolean="true" name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-12">
+        <createTable tableName="remote_file">
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="google_drive_file_pkey"/>
+            </column>
+            <column name="tenant_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="file_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="priority" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="public_url" type="VARCHAR(1000)"/>
+            <column name="remote_id" type="VARCHAR(100)"/>
+            <column name="anyone_with_link" type="BOOLEAN"/>
+            <column name="status" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueNumeric="0" name="attempt" type="INTEGER"/>
+            <column defaultValueBoolean="false" name="anyone_with_link_requested" type="BOOLEAN"/>
+            <column name="remote_provider_type" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-13">
+        <createTable tableName="email_template">
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="email_template_pkey"/>
+            </column>
+            <column name="templ_code" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="templ_content" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="subject" type="TEXT"/>
+            <column name="enabled" type="BOOLEAN"/>
+            <column name="created_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-14">
+        <createTable tableName="quick_contact">
+            <column name="tenant_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="quick_contact_pkey"/>
+            </column>
+            <column name="company_name" type="VARCHAR(50)"/>
+            <column name="contact_name" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="phone_number" type="VARCHAR(50)"/>
+            <column name="country" type="VARCHAR(100)"/>
+            <column name="city" type="VARCHAR(50)"/>
+            <column name="city_details" type="VARCHAR(100)"/>
+            <column name="email" type="VARCHAR(100)"/>
+            <column name="note" type="VARCHAR(500)"/>
+            <column name="origin" type="VARCHAR(100)"/>
+            <column name="created_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="extra_field_name1" type="VARCHAR(50)"/>
+            <column name="extra_field_value1" type="VARCHAR(100)"/>
+            <column name="extra_field_name2" type="VARCHAR(50)"/>
+            <column name="extra_field_value2" type="VARCHAR(100)"/>
+            <column name="extra_field_name3" type="VARCHAR(50)"/>
+            <column name="extra_field_value3" type="VARCHAR(100)"/>
+            <column name="is_sent" type="BOOLEAN"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-15">
+        <createTable tableName="payment_transaction">
+            <column name="tenant_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="payment_transaction_pkey"/>
+            </column>
+            <column name="gid" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="group_gid" type="VARCHAR(150)"/>
+            <column name="referred_transaction_id" type="INTEGER"/>
+            <column name="raw_id" type="VARCHAR(500)"/>
+            <column name="payment_provider" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="payment_operation_type" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="original_currency" type="VARCHAR(3)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="original_amount" type="numeric(19, 2)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="approximate_amount_in_usd" type="numeric(19, 2)"/>
+            <column name="order_id" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="customer_user_id" type="INTEGER"/>
+            <column name="customer_id" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="provider_specific_input" type="TEXT"/>
+            <column name="provider_specific_processing_data" type="TEXT"/>
+            <column name="back_office_notes" type="VARCHAR(500)"/>
+            <column name="order_info_label" type="VARCHAR(75)"/>
+            <column name="file_ids" type="TEXT"/>
+            <column name="payment_provider_confirm_ui_url" type="VARCHAR(1000)"/>
+            <column name="return_url" type="VARCHAR(1000)"/>
+            <column name="last_status_check_request_on" type="TIMESTAMP WITHOUT TIME ZONE"/>
+            <column name="status_check_frequency" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_status_check_reserved_for" type="VARCHAR(100)"/>
+            <column name="additional_deposit_stage_count" type="INTEGER"/>
+            <column name="additional_deposit_stage_finished" type="INTEGER"/>
+            <column name="manual_status_change" type="BOOLEAN"/>
+            <column name="created_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="provider_specific_output" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-16">
+        <createTable tableName="auth_user_password">
+            <column name="tenant_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="auth_user_password_pkey"/>
+            </column>
+            <column name="user_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="two_factor_type" type="INTEGER"/>
+            <column name="two_factor_enabled" type="BOOLEAN"/>
+            <column name="two_factor_value" type="TEXT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-17">
+        <createTable tableName="code_store_type">
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="code_store_type_pkey"/>
+            </column>
+            <column name="caption" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueBoolean="false" name="expandable" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueBoolean="true" name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-18">
+        <createTable tableName="auth_user_sso">
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="auth_user_sso_pkey"/>
+            </column>
+            <column name="user_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="sso_id" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="sso_type" type="VARCHAR(50)"/>
+            <column name="tenant_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-19">
+        <createTable tableName="payment_transaction_raw_log">
+            <column name="tenant_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="payment_transaction_raw_log_pkey"/>
+            </column>
+            <column name="payment_transaction_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="log_data" type="VARCHAR(2000)"/>
+            <column name="created_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-20">
+        <createTable tableName="geo_country_ip">
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="geo_country_ip_pkey"/>
+            </column>
+            <column name="country_name" type="VARCHAR(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="country_code" type="CHAR(2)"/>
+            <column name="start_ip" type="VARCHAR(15)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="end_ip" type="VARCHAR(15)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="netmask" type="VARCHAR(15)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-21">
+        <createTable tableName="auth_user_key_value_settings">
+            <column name="tenant_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="auth_user_key_value_settings_pkey"/>
+            </column>
+            <column name="user_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="kv_key" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="kv_value" type="VARCHAR(100)"/>
+            <column name="created_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="kv_long_text" type="TEXT"/>
+            <column defaultValueBoolean="true" name="manual_edit_allowed" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-22">
+        <createTable tableName="auth_user">
+            <column name="tenant_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="auth_user_pkey"/>
+            </column>
+            <column name="username" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="superior" type="INTEGER"/>
+            <column name="note" type="VARCHAR(160)"/>
+            <column defaultValueBoolean="false" name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="'[]'" name="user_roles" type="TEXT">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueBoolean="false" name="anonymized_deleted" type="BOOLEAN"/>
+            <column name="additional_data1" type="VARCHAR(50)"/>
+            <column name="additional_data2" type="VARCHAR(50)"/>
+            <column name="created_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="profile_img" type="INTEGER"/>
+            <column name="parent_id" type="INTEGER"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-23">
+        <createTable tableName="file_descriptor">
+            <column name="tenant_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="file_descriptor_pkey"/>
+            </column>
+            <column name="location_type" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="security_type" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="filename" type="VARCHAR(100)"/>
+            <column name="file_path" type="VARCHAR(1024)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="mime_type" type="VARCHAR(100)"/>
+            <column name="file_size" type="BIGINT"/>
+            <column name="hash_value" type="VARCHAR(64)"/>
+            <column name="gid" type="UUID">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="meta_1" type="VARCHAR(150)"/>
+            <column name="meta_2" type="VARCHAR(150)"/>
+            <column name="meta_3" type="INTEGER"/>
+            <column name="note" type="VARCHAR(150)"/>
+            <column name="meta_3_type" type="INTEGER"/>
+            <column name="remote_only" type="BOOLEAN"/>
+            <column name="parent_id" type="INTEGER"/>
+            <column name="child_type" type="INTEGER"/>
+            <column name="meta_4" type="TEXT"/>
+            <column name="locked_by" type="INTEGER"/>
+            <column name="locked_on" type="TIMESTAMP WITHOUT TIME ZONE"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-24">
+        <createTable tableName="geo_area">
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="geo_area_pkey"/>
+            </column>
+            <column name="geo_area_type" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="geo_area_name" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="geo_area_url_name" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="parent_area" type="INTEGER"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-25">
+        <createTable tableName="two_factor_credential">
+            <column autoIncrement="true" name="id" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="two_factor_credential_pkey"/>
+            </column>
+            <column name="tenant_id" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="username" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="secret_code" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="validation_code" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="scratch_codes" type="INTEGER"/>
+            <column name="created_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_by" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="modified_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-26">
+        <createTable tableName="flyway_schema_history">
+            <column name="installed_rank" type="INTEGER">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="flyway_schema_history_pk"/>
+            </column>
+            <column name="version" type="VARCHAR(50)"/>
+            <column name="description" type="VARCHAR(200)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="VARCHAR(20)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="script" type="VARCHAR(1000)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="checksum" type="INTEGER"/>
+            <column name="installed_by" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+            <column defaultValueComputed="GETDATE()" name="installed_on" type="TIMESTAMP WITHOUT TIME ZONE">
+                <constraints nullable="false"/>
+            </column>
+            <column name="execution_time" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="success" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-27">
+        <createIndex indexName="auth_user_info_idx" tableName="auth_user_info">
+            <column computed="true" name="given_name"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-28">
+        <createIndex indexName="auth_user_info_idx1" tableName="auth_user_info">
+            <column computed="true" name="family_name"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-29">
+        <createIndex indexName="auth_user_info_idx2" tableName="auth_user_info">
+            <column computed="true" name="email"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-30">
+        <createIndex indexName="auth_user_info_user_id_idx" tableName="auth_user_info" unique="true">
+            <column name="user_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-31">
+        <addUniqueConstraint columnNames="user_id" constraintName="auth_user_info_user_id_key" tableName="auth_user_info"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-32">
+        <createIndex indexName="email_from_email_idx" tableName="email">
+            <column name="from_email"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-33">
+        <createIndex indexName="email_status_idx" tableName="email">
+            <column name="status"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-34">
+        <createIndex indexName="email_tenant_id_idx" tableName="email">
+            <column name="tenant_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-35">
+        <createIndex indexName="email_to_email_idx" tableName="email">
+            <column name="to_email"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-36">
+        <createIndex indexName="tenant_info_email_idx" tableName="tenant_info">
+            <column name="email"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-37">
+        <createIndex indexName="tenant_info_phone_idx" tableName="tenant_info">
+            <column name="phone"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-38">
+        <addUniqueConstraint columnNames="tenant_id" constraintName="tenant_info_tenant_id_key" tableName="tenant_info"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-39">
+        <createIndex indexName="persistent_login_idx" tableName="persistent_login">
+            <column computed="true" name="username"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-40">
+        <createIndex indexName="auth_token_idx" tableName="auth_token" unique="true">
+            <column computed="true" name="token"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-41">
+        <createIndex indexName="auth_token_tenant_id_idx" tableName="auth_token">
+            <column name="tenant_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-42">
+        <createIndex indexName="auth_token_token_type_idx" tableName="auth_token">
+            <column name="token_type"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-43">
+        <createIndex indexName="ip2location_db11_ip_from_ip_to_idx" tableName="ip2location_db11">
+            <column name="ip_from"/>
+            <column name="ip_to"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-44">
+        <createIndex indexName="tenant_key_value_settings_tenant_id_idx" tableName="tenant_key_value_settings" unique="true">
+            <column name="tenant_id"/>
+            <column computed="true" name="kv_key"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-45">
+        <addUniqueConstraint columnNames="event_date" constraintName="holiday_dstart_key" tableName="holiday"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-46">
+        <addUniqueConstraint columnNames="name" constraintName="tenant_name_key" tableName="tenant"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-47">
+        <addForeignKeyConstraint baseColumnNames="tenant_id" baseTableName="two_factor_credential" constraintName="two_factor_credential_tenant_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="tenant" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-48">
+        <createIndex indexName="code_store_item_code_store_type_id_idx" tableName="code_store_item">
+            <column name="code_store_type_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-49">
+        <createIndex indexName="code_store_item_idx" tableName="code_store_item">
+            <column computed="true" name="command"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-50">
+        <addForeignKeyConstraint baseColumnNames="status" baseTableName="email" constraintName="email_status_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-51">
+        <addForeignKeyConstraint baseColumnNames="templ_code" baseTableName="email_template" constraintName="email_template_templ_code_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-52">
+        <addForeignKeyConstraint baseColumnNames="child_type" baseTableName="file_descriptor" constraintName="file_descriptor_child_type_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-53">
+        <addForeignKeyConstraint baseColumnNames="location_type" baseTableName="file_descriptor" constraintName="file_descriptor_location_type_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-54">
+        <addForeignKeyConstraint baseColumnNames="meta_3" baseTableName="file_descriptor" constraintName="file_descriptor_meta_3_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-55">
+        <addForeignKeyConstraint baseColumnNames="security_type" baseTableName="file_descriptor" constraintName="file_descriptor_security_type_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-56">
+        <addForeignKeyConstraint baseColumnNames="status" baseTableName="file_descriptor" constraintName="file_descriptor_status_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-57">
+        <addForeignKeyConstraint baseColumnNames="geo_area_type" baseTableName="geo_area" constraintName="geo_area_geo_area_type_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-58">
+        <addForeignKeyConstraint baseColumnNames="status" baseTableName="remote_file" constraintName="google_drive_file_status_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-59">
+        <addForeignKeyConstraint baseColumnNames="payment_provider" baseTableName="payment_config" constraintName="payment_config_payment_provider_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-60">
+        <addForeignKeyConstraint baseColumnNames="payment_operation_type" baseTableName="payment_transaction" constraintName="payment_transaction_payment_operation_type_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-61">
+        <addForeignKeyConstraint baseColumnNames="payment_provider" baseTableName="payment_transaction" constraintName="payment_transaction_payment_provider_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-62">
+        <addForeignKeyConstraint baseColumnNames="status_check_frequency" baseTableName="payment_transaction" constraintName="payment_transaction_status_check_frequency_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-63">
+        <addForeignKeyConstraint baseColumnNames="status" baseTableName="payment_transaction" constraintName="payment_transaction_status_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-64">
+        <addForeignKeyConstraint baseColumnNames="priority" baseTableName="remote_file" constraintName="priority_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-65">
+        <addForeignKeyConstraint baseColumnNames="remote_provider_type" baseTableName="remote_file" constraintName="remote_file_remote_provider_type_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-66">
+        <addForeignKeyConstraint baseColumnNames="extra_data_4" baseTableName="tenant_info" constraintName="tenant_info_extra_data_4_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-67">
+        <addUniqueConstraint columnNames="file_id" constraintName="google_drive_file_file_id_key" tableName="remote_file"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-68">
+        <addForeignKeyConstraint baseColumnNames="tenant_id" baseTableName="remote_file" constraintName="google_drive_file_tenant_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="tenant" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-69">
+        <createIndex indexName="google_drive_file_tenant_id_idx" tableName="remote_file">
+            <column name="tenant_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-70">
+        <addForeignKeyConstraint baseColumnNames="tenant_id" baseTableName="quick_contact" constraintName="quick_contact_tenant_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="tenant" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-71">
+        <addForeignKeyConstraint baseColumnNames="payment_transaction_id" baseTableName="payment_transaction_raw_log" constraintName="payment_transaction_raw_log_payment_transaction_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="payment_transaction" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-72">
+        <addForeignKeyConstraint baseColumnNames="referred_transaction_id" baseTableName="payment_transaction" constraintName="payment_transaction_referred_transaction_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="payment_transaction" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-73">
+        <addForeignKeyConstraint baseColumnNames="tenant_id" baseTableName="payment_transaction" constraintName="payment_transaction_tenant_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="tenant" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-74">
+        <addForeignKeyConstraint baseColumnNames="tenant_id" baseTableName="auth_user_password" constraintName="auth_user_password_tenant_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="tenant" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-75">
+        <createIndex indexName="auth_user_password_tenant_id_idx" tableName="auth_user_password">
+            <column name="tenant_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-76">
+        <addForeignKeyConstraint baseColumnNames="two_factor_type" baseTableName="auth_user_password" constraintName="auth_user_password_two_factor_type_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-77">
+        <addUniqueConstraint columnNames="user_id" constraintName="auth_user_password_user_id_key" tableName="auth_user_password"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-78">
+        <addForeignKeyConstraint baseColumnNames="meta_3_type" baseTableName="file_descriptor" constraintName="file_descriptor_meta_3_type_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_type" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-79">
+        <createIndex indexName="auth_user_sso_idx" tableName="auth_user_sso" unique="true">
+            <column computed="true" name="sso_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-80">
+        <addForeignKeyConstraint baseColumnNames="tenant_id" baseTableName="auth_user_sso" constraintName="auth_user_sso_tenant_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="tenant" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-81">
+        <addUniqueConstraint columnNames="user_id" constraintName="auth_user_sso_user_id_key" tableName="auth_user_sso"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-82">
+        <addForeignKeyConstraint baseColumnNames="tenant_id" baseTableName="payment_transaction_raw_log" constraintName="payment_transaction_raw_log_tenant_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="tenant" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-83">
+        <createIndex indexName="geo_country_ip_idx" tableName="geo_country_ip">
+            <column computed="true" name="country_name"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-84">
+        <createIndex indexName="geo_country_ip_idx1" tableName="geo_country_ip">
+            <column computed="true" name="country_code"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-85">
+        <createIndex indexName="geo_country_ip_start_ip_end_ip_idx" tableName="geo_country_ip">
+            <column name="start_ip"/>
+            <column name="end_ip"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-86">
+        <addForeignKeyConstraint baseColumnNames="tenant_id" baseTableName="auth_user_key_value_settings" constraintName="auth_user_key_value_settings_tenant_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="tenant" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-87">
+        <createIndex indexName="auth_user_key_value_settings_user_id_idx" tableName="auth_user_key_value_settings" unique="true">
+            <column name="user_id"/>
+            <column computed="true" name="kv_key"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-88">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="auth_user_sso" constraintName="auth_user_sso_user_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-89">
+        <addForeignKeyConstraint baseColumnNames="superior" baseTableName="auth_user" constraintName="auth_user_superior_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-90">
+        <addForeignKeyConstraint baseColumnNames="tenant_id" baseTableName="auth_user" constraintName="auth_user_tenant_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="tenant" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-91">
+        <createIndex indexName="auth_user_tenant_id_username_key" tableName="auth_user" unique="true">
+            <column name="tenant_id"/>
+            <column computed="true" name="username"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-92">
+        <addForeignKeyConstraint baseColumnNames="created_by" baseTableName="code_store_item" constraintName="code_store_item_created_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-93">
+        <addForeignKeyConstraint baseColumnNames="modified_by" baseTableName="code_store_item" constraintName="code_store_item_modified_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-94">
+        <addForeignKeyConstraint baseColumnNames="created_by" baseTableName="code_store_type" constraintName="code_store_type_created_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-95">
+        <addForeignKeyConstraint baseColumnNames="modified_by" baseTableName="code_store_type" constraintName="code_store_type_modified_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-96">
+        <addForeignKeyConstraint baseColumnNames="created_by" baseTableName="email" constraintName="email_created_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-97">
+        <addForeignKeyConstraint baseColumnNames="modified_by" baseTableName="email" constraintName="email_modified_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-98">
+        <addForeignKeyConstraint baseColumnNames="created_by" baseTableName="email_template" constraintName="email_template_created_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-99">
+        <addForeignKeyConstraint baseColumnNames="modified_by" baseTableName="email_template" constraintName="email_template_modified_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-100">
+        <addForeignKeyConstraint baseColumnNames="created_by" baseTableName="file_descriptor" constraintName="file_descriptor_created_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-101">
+        <addForeignKeyConstraint baseColumnNames="locked_by" baseTableName="file_descriptor" constraintName="file_descriptor_locked_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-102">
+        <addForeignKeyConstraint baseColumnNames="modified_by" baseTableName="file_descriptor" constraintName="file_descriptor_modified_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-103">
+        <addForeignKeyConstraint baseColumnNames="created_by" baseTableName="remote_file" constraintName="google_drive_file_created_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-104">
+        <addForeignKeyConstraint baseColumnNames="modified_by" baseTableName="remote_file" constraintName="google_drive_file_modified_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-105">
+        <addForeignKeyConstraint baseColumnNames="created_by" baseTableName="payment_config" constraintName="payment_config_created_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-106">
+        <addForeignKeyConstraint baseColumnNames="modified_by" baseTableName="payment_config" constraintName="payment_config_modified_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-107">
+        <addForeignKeyConstraint baseColumnNames="created_by" baseTableName="payment_transaction" constraintName="payment_transaction_created_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-108">
+        <addForeignKeyConstraint baseColumnNames="customer_user_id" baseTableName="payment_transaction" constraintName="payment_transaction_customer_user_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-109">
+        <addForeignKeyConstraint baseColumnNames="modified_by" baseTableName="payment_transaction" constraintName="payment_transaction_modified_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-110">
+        <addForeignKeyConstraint baseColumnNames="created_by" baseTableName="payment_transaction_raw_log" constraintName="payment_transaction_raw_log_created_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-111">
+        <addForeignKeyConstraint baseColumnNames="modified_by" baseTableName="payment_transaction_raw_log" constraintName="payment_transaction_raw_log_modified_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-112">
+        <addForeignKeyConstraint baseColumnNames="created_by" baseTableName="quick_contact" constraintName="quick_contact_created_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-113">
+        <addForeignKeyConstraint baseColumnNames="modified_by" baseTableName="quick_contact" constraintName="quick_contact_modified_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-114">
+        <addForeignKeyConstraint baseColumnNames="created_by" baseTableName="two_factor_credential" constraintName="two_factor_credential_created_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-115">
+        <addForeignKeyConstraint baseColumnNames="modified_by" baseTableName="two_factor_credential" constraintName="two_factor_credential_modified_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-116">
+        <addUniqueConstraint columnNames="file_path" constraintName="file_descriptor_file_path_key" tableName="file_descriptor"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-117">
+        <createIndex indexName="file_descriptor_gid_idx" tableName="file_descriptor">
+            <column name="gid"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-118">
+        <createIndex indexName="file_descriptor_idx" tableName="file_descriptor" unique="true">
+            <column computed="true" name="file_path"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-119">
+        <createIndex indexName="file_descriptor_idx1" tableName="file_descriptor">
+            <column computed="true" name="mime_type"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-120">
+        <createIndex indexName="file_descriptor_idx2" tableName="file_descriptor">
+            <column computed="true" name="filename"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-121">
+        <addForeignKeyConstraint baseColumnNames="tenant_id" baseTableName="file_descriptor" constraintName="file_descriptor_tenant_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="tenant" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-122">
+        <createIndex indexName="file_descriptor_tenant_id_idx" tableName="file_descriptor">
+            <column name="tenant_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-123">
+        <addForeignKeyConstraint baseColumnNames="file_id" baseTableName="remote_file" constraintName="google_drive_file_file_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="file_descriptor" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-124">
+        <createIndex indexName="geo_area_idx" tableName="geo_area">
+            <column computed="true" name="geo_area_url_name"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-125">
+        <createIndex indexName="geo_area_parent_area_idx" tableName="geo_area">
+            <column name="parent_area"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-126">
+        <createIndex indexName="flyway_schema_history_s_idx" tableName="flyway_schema_history">
+            <column name="success"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-127">
+        <addForeignKeyConstraint baseColumnNames="created_by" baseTableName="auth_user_info" constraintName="auth_user_info_created_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-128">
+        <addForeignKeyConstraint baseColumnNames="modified_by" baseTableName="auth_user_info" constraintName="auth_user_info_modified_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-129">
+        <addForeignKeyConstraint baseColumnNames="tenant_id" baseTableName="auth_user_info" constraintName="auth_user_info_tenant_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="tenant" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-130">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="auth_user_info" constraintName="auth_user_info_user_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-131">
+        <addForeignKeyConstraint baseColumnNames="tenant_id" baseTableName="email" constraintName="email_tenant_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="tenant" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-132">
+        <addForeignKeyConstraint baseColumnNames="tenant_id" baseTableName="tenant_info" constraintName="tenant_info_tenant_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="tenant" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-133">
+        <addForeignKeyConstraint baseColumnNames="created_by" baseTableName="auth_token" constraintName="auth_token_created_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-134">
+        <addForeignKeyConstraint baseColumnNames="modified_by" baseTableName="auth_token" constraintName="auth_token_modified_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-135">
+        <addForeignKeyConstraint baseColumnNames="tenant_id" baseTableName="auth_token" constraintName="auth_token_tenant_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="tenant" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-136">
+        <addForeignKeyConstraint baseColumnNames="token_type" baseTableName="auth_token" constraintName="auth_token_token_type_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_item" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-137">
+        <addForeignKeyConstraint baseColumnNames="tenant_id" baseTableName="tenant_key_value_settings" constraintName="tenant_key_value_settings_tenant_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="tenant" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-138">
+        <addForeignKeyConstraint baseColumnNames="tenant_id" baseTableName="payment_config" constraintName="payment_config_tenant_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="tenant" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-139">
+        <addForeignKeyConstraint baseColumnNames="code_store_type_id" baseTableName="code_store_item" constraintName="code_store_item_code_store_type_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="code_store_type" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-140">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="auth_user_password" constraintName="auth_user_password_user_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-141">
+        <addForeignKeyConstraint baseColumnNames="created_by" baseTableName="auth_user_key_value_settings" constraintName="auth_user_key_value_settings_created_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-142">
+        <addForeignKeyConstraint baseColumnNames="modified_by" baseTableName="auth_user_key_value_settings" constraintName="auth_user_key_value_settings_modified_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-143">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="auth_user_key_value_settings" constraintName="auth_user_key_value_settings_user_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-144">
+        <addForeignKeyConstraint baseColumnNames="created_by" baseTableName="auth_user" constraintName="auth_user_created_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-145">
+        <addForeignKeyConstraint baseColumnNames="modified_by" baseTableName="auth_user" constraintName="auth_user_modified_by_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-146">
+        <addForeignKeyConstraint baseColumnNames="parent_id" baseTableName="auth_user" constraintName="auth_user_parent_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="auth_user" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-147">
+        <addForeignKeyConstraint baseColumnNames="profile_img" baseTableName="auth_user" constraintName="auth_user_profile_img_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="file_descriptor" validate="true"/>
+    </changeSet>
+    <changeSet author="Kiss Gergely (generated)" id="1591776014459-148">
+        <addForeignKeyConstraint baseColumnNames="parent_id" baseTableName="file_descriptor" constraintName="file_descriptor_parent_id_fkey" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="file_descriptor" validate="true"/>
+    </changeSet>
+</databaseChangeLog>

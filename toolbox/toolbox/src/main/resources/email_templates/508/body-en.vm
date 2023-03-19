@@ -1,0 +1,11 @@
+<p>Dear $recipient!</p>
+
+<p><br></p>
+
+<p>The following incoming (from public form) Quick contact elements have been added: $data</p>
+
+<p><br></p>
+
+<p><strong>Best regards,</strong></p>
+<p>$tenantName</p>
+<p>$appName</p>

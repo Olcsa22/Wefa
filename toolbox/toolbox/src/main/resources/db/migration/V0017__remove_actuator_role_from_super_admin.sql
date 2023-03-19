@@ -1,0 +1,1 @@
+UPDATE auth_user SET user_roles = '[100,102,104,106,110]' WHERE tenant_id = 1 AND id = 1;

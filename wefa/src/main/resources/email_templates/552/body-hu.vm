@@ -1,0 +1,9 @@
+<div style="border: 1px solid grey; padding: 20px">
+<p>Tisztelt $recipient!</p>
+
+<p>$notifText</p>
+<p>$clientAccountType</p>
+
+<p>Üdvözlettel:<br>
+WEFA</p>
+</div>

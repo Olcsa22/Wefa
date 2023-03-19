@@ -1,0 +1,16 @@
+<p>Tisztelt $recipient!</p>
+
+<p><br></p>
+
+<p>E-mail címének megadásával új jelszó létrehozását kérték. Jelszavát a következő linkre kattintva változtathatja meg: $data</p>
+<p>Amennyiben nem Ön kezdeményezte a jelszó megváltoztatását, úgy tekintse ezt az e-mailt tárgytalannak.</p>
+
+<p><br></p>
+
+<p><strong>Tisztelettel,</strong></p>
+<p>$tenant</p>
+<p>$appname</p>
+
+<p><br></p>
+
+<p>$currentDate</p>

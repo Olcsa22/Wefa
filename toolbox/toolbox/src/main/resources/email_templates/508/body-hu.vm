@@ -1,0 +1,11 @@
+<p>Tisztelt $recipient!</p>
+
+<p><br></p>
+
+<p>A következő Quick contact megkeresések (publikus formon rögzített) kerültek be a rendszerbe: $data</p>
+
+<p><br></p>
+
+<p><strong>Tisztelettel,</strong></p>
+<p>$tenantName</p>
+<p>$appName</p>

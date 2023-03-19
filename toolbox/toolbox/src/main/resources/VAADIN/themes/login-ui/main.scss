@@ -1,0 +1,59 @@
+@mixin main {
+
+  #view-wrapper-1 {
+    width: 100%;
+    min-width: 400px;
+  }
+
+  #view-wrapper-2 {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .text-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .icon-button {
+    background: none !important;
+    border: none !important;
+  }
+
+  .avoid-clicks {
+    pointer-events: none;
+  }
+
+  .min-height-400px {
+    min-height: 400px;
+  }
+
+  .max-width-150px {
+    max-width: 150px;
+  }
+
+  .text-align-left {
+    text-align: left !important;
+  }
+
+  .text-align-right {
+    text-align: right !important;
+  }
+
+  .null-chk label:after {
+    content: '\e7a4' !important;
+    opacity: 0.5;
+    color: $v-selection-color !important;
+    font-family: Vaadin-Icons !important;
+  }
+
+  .v-button {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+

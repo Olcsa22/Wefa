@@ -1,0 +1,1 @@
+ALTER TABLE auth_user_sso ADD COLUMN tenant_id INT NOT NULL REFERENCES tenant(id);

@@ -1,0 +1,16 @@
+<p>Tisztelt $recipient!</p>
+
+<p><br></p>
+
+<p>Az alábbi felhasználó sikeresen regisztrált a rendszerbe: $data.</p>
+<p>Ez az üzenet egy automatikus értesítő felhasználó regisztrációjáról (önnek nincs teendője).</p>
+
+<p><br></p>
+
+<p><strong>Tisztelettel,</strong></p>
+<p>$tenant</p>
+<p>$appname</p>
+
+<p><br></p>
+
+<p>$currentDate</p>

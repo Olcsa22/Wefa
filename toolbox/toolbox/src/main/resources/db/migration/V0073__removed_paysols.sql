@@ -1,0 +1,1 @@
+DELETE FROM code_store_item WHERE id = 1810 -- a regi fajta OTP Bank (SOAP/WSDL) mar nem elerheto, csak a SimplePay

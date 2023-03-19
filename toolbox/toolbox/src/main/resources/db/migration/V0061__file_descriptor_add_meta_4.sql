@@ -1,0 +1,1 @@
+ALTER TABLE file_descriptor ADD COLUMN meta_4 JSONB;

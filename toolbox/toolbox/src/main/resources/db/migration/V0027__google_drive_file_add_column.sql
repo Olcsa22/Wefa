@@ -1,0 +1,2 @@
+ALTER TABLE google_drive_file
+ADD COLUMN anyone_with_link_requested BOOLEAN DEFAULT FALSE;

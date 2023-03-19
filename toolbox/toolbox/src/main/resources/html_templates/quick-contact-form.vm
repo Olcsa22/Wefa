@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/3.4.1/$theme/bootstrap.min.css" />
+	
+	<link rel="icon" href="/$brand/assets/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="64x64" href="/$brand/assets/logo-64.png" />
+	<link rel="apple-touch-icon" sizes="256x256" href="/$brand/assets/logo-256.png" />
+	
+	<meta name="robots" content="noindex, nofollow">
+	
+	<style>
+	
+	.country-select {
+		display: block;
+	}
+	
+	.flag-dropdown, .country-list {
+		width: 100%;
+	}
+	
+	</style>
+	
+	#if($cs)
+	<style>$cs</style>
+	#end
+
+</head>
+
+<body style="padding: 10px">
+	<div class="container">
+#if($serverSuccessMsg)
+		<div class="alert alert-info bg-primary-custom">$serverSuccessMsg</div>
+#elseif($serverValidationErrorMsg)
+		<div class="alert alert-warning bg-primary-custom">$serverValidationErrorMsg</div>
+		<button class="btn btn-block btn-default" onclick="window.history.go(-1); return false;">$lblGoBack</button>
+#else
+#if($devmode)
+
+<pre><b>developer notes:</b>
+form theme can be customized via <a href='https://www.bootstrapcdn.com/legacy/bootswatch/'>https://www.bootstrapcdn.com/legacy/bootswatch/</a> theme names:
+use theme=foo parameter (can be used for GET and POST too, meaning for IFRAME and for POST to endpoint mode too)</pre>
+#end
+#if($devmode)
+
+<pre><b>developer notes (for custom form (POST to endpoint) mode):</b>
+server only does a very minimal required field check/validation... 
+please see sample serverSuccessMsg/serverValidationErrorMsg below... 
+additional frontend (HTML and/or JavaScript) validation is recommended (as can be seen here in the IFRAME mode)</pre>
+#end
+#if($devmode)
+
+<pre><b>developer notes (for custom form (POST to endpoint) mode):</b>
+additional/extra fields are possible, please see extraFieldName 1-3 and extraFieldValue 1-3 below
+extraFieldName 1-3 is short description about the nature of extraFieldValue 1-3...</pre>
+
+#end
+		<form class="form-horizontal" method="post">
+			
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="companyName">$lblCompanyName</label>
+				<div class="col-sm-9">
+					<input type="text" class="form-control" pattern=".{0,50}" id="companyName" name="companyName">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="contactName">$lblContactName</label>
+				<div class="col-sm-9">
+					<input type="text" class="form-control" pattern=".{0,50}" id="contactName" name="contactName">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="email">$lblEmail</label>
+				<div class="col-sm-9">
+					<input type="email" class="form-control" pattern=".{0,100}" id="email" name="email">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="phoneNumber">$lblPhoneNumber</label>
+				<div class="col-sm-9">
+					<input type="tel" class="form-control" pattern=".{6,50}" id="phoneNumber" name="phoneNumber">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="country">$lblCountry</label>
+				<div class="col-sm-9">
+					<input type="text" class="form-control" pattern=".{0,100}" id="country" name="country">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="city">$lblCity</label>
+				<div class="col-sm-9">
+					<input type="text" class="form-control" pattern=".{0,50}" id="city" name="city">
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="cityDetails">$lblAddress</label>
+				<div class="col-sm-9">
+					<input type="text" class="form-control" pattern=".{0,100}" id="cityDetails" name="cityDetails">
+				</div>
+			</div>			
+#if($devmode)
+
+			<!-- optional extra fields, developer sample: -->
+
+			<div class="form-group">
+			<label class="control-label col-sm-3" for="extraFieldValue1">Age (extraField 1):</label>
+			<div class="col-sm-9">
+				<input type="text" class="form-control" pattern=".{0,100}" id="extraFieldValue1" name="extraFieldValue1">
+			</div>
+			</div>	
+			<div class="form-group">
+			<label class="control-label col-sm-3" for="extraFieldValue2">Currency (extraField 2):</label>
+			<div class="col-sm-9">
+				<input type="text" class="form-control" pattern=".{0,100}" id="extraFieldValue2" name="extraFieldValue2">
+			</div>
+			</div>	
+			<div class="form-group">
+			<label class="control-label col-sm-3" for="extraFieldValue3">Amount (extraField 3):</label>
+			<div class="col-sm-9">
+				<input type="text" class="form-control" pattern=".{0,100}" id="extraFieldValue3" name="extraFieldValue3">
+			</div>
+			</div>	
+
+#end
+			
+			<div class="form-group">
+				<label class="control-label col-sm-3" for="note">$lblNote</label>
+				<div class="col-sm-9">
+					<textarea rows="4" cols="50" class="form-control" maxlength="500" type="text" id="note" name="note" style="resize: none;"></textarea>
+				</div>
+			</div> 
+			
+#if($devmode)
+			<!-- theme pass through to result page: -->
+#end
+
+			<input type="text" name="theme" value="$theme" hidden>
+
+#if($cs)
+			<input type="text" name="cs" value="$cs" hidden>
+#end
+
+#if($gs)
+            <input type="text" name="gs" value="$gs" hidden>
+#end
+
+#if($origin)
+            <input type="text" name="origin" value="$origin" hidden>
+#end
+
+#if($devmode)
+
+			<!-- optional extra fields, developer sample: -->
+
+			<input type="text" name="extraFieldName1" value="Age" hidden>
+			<input type="text" name="extraFieldName2" value="Currency" hidden>
+			<input type="text" name="extraFieldName3" value="Amount"  hidden>
+
+#end	
+#if($devmode)
+
+			<!-- optionally customizable messages, developer sample: -->
+
+			<input type="text" name="serverValidationErrorMsg" value="Please fill these fields: name, email and/or phone number" hidden>
+			<input type="text" name="serverSuccessMsg" value="Successful submit!" hidden>
+			
+			<!-- after success forward is also possible (the serverSuccessMsg value should start with "fw-" prefix and after that the full URL in UTF-8 + base64UrlSafe): "fw-aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8=" -->
+			
+#end
+
+			<div class="form-group"> 
+				<div class="col-sm-offset-3 col-sm-9">
+					<button type="submit" class="btn btn-block btn-success">$lblSubmit</button>
+				</div>
+			</div>
+			
+		</form>
+#end
+	</div>
+	
+</body>
+
+
+
+</html>

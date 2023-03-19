@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+
+<!-- https://github.com/davidjbradshaw/iframe-resizer/blob/master/docs/parent_page/options.md -->
+<!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.6/ie8.polyfils.min.js" integrity="sha256-4dwy+5CQ3oXA6uwe3po7puiZoevaqdCF2fdDme5nw0o=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.6/iframeResizer.min.js" integrity="sha256-5r9UPUd91Mxmbs8eITXPUExaxe32XhIbQTXAluac41M=" crossorigin="anonymous"></script>
+-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.9/iframeResizer.min.js" integrity="sha256-I8J1+En2L9RRMC9nNz2CB0mOBZREXlPHV53Prl65OP0=" crossorigin="anonymous"></script>
+
+<script>
+    function refresh() {
+        document.getElementById("testFrame").src = "/wefa/public/form#" + document.getElementsByName("tenant").item(0).value + "/" + document.getElementsByName("form").item(0).value;
+        document.getElementById('testFrame').contentWindow.location.reload();
+    }
+</script>
+
+</head>
+
+<body>
+
+<div style="padding: 10px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac luctus odio. Sed ligula tellus, blandit nec pretium non, semper porttitor ligula. Pellentesque sollicitudin quis tellus quis fermentum. Fusce ut varius orci. Duis sagittis malesuada risus. Curabitur eros purus, molestie sit amet mi in, scelerisque accumsan est. Nullam euismod euismod varius. Integer et vehicula sapien.
+</div>
+
+<div style="padding: 10px;">
+    <input type="text" name="tenant" value = 11>
+    <input type="text" name="form" value="AsskAg6q90">
+    <button type="button" onclick="refresh();">Frissites</button>
+</div>
+
+<div style="padding: 10px;">
+<iframe src="/wefa/public/form#11/AsskAg6q90" style="width: 100%; border: 1px solid grey; min-height: 150px; max-width: 1000px" id="testFrame" scrolling="no"></iframe>
+
+<script>
+  iFrameResize({ log: true, heightCalculationMethod: 'taggedElement', autoResize: true}, '#testFrame'); 
+</script> 
+</div>
+
+<div style="padding: 10px;">
+Fusce felis nulla, elementum eget vulputate eget, porta eget nulla. Etiam cursus luctus condimentum. Phasellus tristique, quam ac consequat semper, felis dolor congue est, ut consectetur lacus mauris et nunc. Pellentesque vel dui eros. Vestibulum imperdiet justo tellus, volutpat suscipit tortor commodo sed. Pellentesque sed hendrerit justo. Nullam a ullamcorper eros.
+</div>
+
+</body>
+</html>
+
+ 

@@ -1,0 +1,1 @@
+nohup java -Xms1024m -Xmx1024m -Dspring.profiles.active=dev -jar app.jar &

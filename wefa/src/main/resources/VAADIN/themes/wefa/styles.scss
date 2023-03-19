@@ -1,0 +1,10 @@
+@import "addons.scss";
+@import "valo-config.scss";
+@import "main.scss";
+
+/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
+.wefa {
+  @include addons;
+  @include valo-config;
+  @include main;
+}

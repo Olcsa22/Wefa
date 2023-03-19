@@ -1,0 +1,1 @@
+ALTER TABLE payment_transaction ADD COLUMN provider_specific_output JSONB;

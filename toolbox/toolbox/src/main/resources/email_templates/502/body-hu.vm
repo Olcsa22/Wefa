@@ -1,0 +1,13 @@
+<p>Tisztelt $recipient!</p>
+
+<p><br></p>
+
+<p>Felhasználói fiókja sikeresen elkészült.</p>
+<p>A következő jelszóval be tud jelentkezni: $data</p>
+<p><strong>Bejelentkezés: </strong>$url</p>
+
+<p><br></p>
+
+<p><strong>Tisztelettel,</strong></p>
+<p>$tenant</p>
+<p>$appname</p>

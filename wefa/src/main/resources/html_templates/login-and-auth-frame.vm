@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="icon" href="../$brand/assets/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="64x64" href="../$brand/assets/logo-64.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="../$brand/assets/logo-256.png">
+
+	<link rel="manifest" href="../b/assets/manifest.json">
+	
+	<meta name="robots" content="noindex, nofollow">
+
+	<title>$appTitle</title>
+
+   	<script>
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('../sw.js', {scope: '../'})
+            .then(function(reg) {
+                // registration worked
+                console.log('Registration succeeded. Scope is ' + reg.scope);
+            }).catch(function(error) {
+                // registration failed
+                console.log('Registration failed with ' + error);
+            });
+        }
+
+    </script>
+
+    <style>
+
+        #login-image {
+            background-image: url('../assets/login_bg.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        #login-content {
+            background-color: #E41819;
+        }
+
+        #login-content .login-title {
+            font-size: 1.2em;
+            text-transform: uppercase;
+            color: #ffffff;
+        }
+
+        #login-content a.text-info {
+            color: #000000 !important;
+        }
+
+        #login-content a.text-info:visited {
+            color: #000000 !important;
+        }
+
+        #login-content a.text-info:hover {
+            color: #ffffff !important;
+        }
+
+        #login-footer-version {
+            color: #666666;
+            background-color: #666666;
+        }
+
+        #login-footer-copyright {
+            color: #ffffff;
+            background-color: #666666;
+        }
+
+    </style>
+
+</head>
+
+<body>
+	<div class="container mt-2">
+
+        <div class="row">
+            <div id="login-image" class="col col-9 d-md-block">
+
+            </div>
+            <div id="login-content" class="col col-12 col-md-3">
+
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="../assets/logo.jpg" class="logo img-fluid">
+                    </div>
+                    <div class="col-12 mb-2 text-center login-title">
+                        Belépés
+                    </div>
+                </div>
+
+
+                ##--- tényleges tartalom
+
+                    #if($contentType == "login-form")
+                        #parse("html_templates/login-form.vm")
+                    #elseif($contentType == "forgotten-password")
+                        <iframe width="100%" height="220px" frameborder="0" src='../public/v/forgotten-password'></iframe>
+                    #elseif($contentType == "reset-password")
+                        <iframe width="100%" height="240px" frameborder="0" src='../public/v/reset-password?token=$token'></iframe>
+                    #end
+
+
+
+                ##--- a kártya alján lévő tartalom
+
+                #if($contentType == "login-form")
+                    <div class="align-items-center d-flex my-3">
+                        <u><a class="text-info" href="./forgotten-password">$btnForgottenPassword</a></u>
+                    </div>
+                #elseif($contentType == "forgotten-password" || $contentType == "reset-password")
+                    <div class="align-items-center d-flex my-3">
+                        <u><a class="text-info" href="./login">$goBackMsg</a></u>
+                    </div>
+                #end
+            </div>
+
+            <div id="login-footer-version" class="col col-6 p-2 text-left">
+                <span>$appVersion</span>
+            </div>
+            <div id="login-footer-copyright" class="col col-6 p-2 text-right">
+##                <span>$copyright</span>
+            </div>
+        </div>
+	</div>
+
+</body>
+
+</html>

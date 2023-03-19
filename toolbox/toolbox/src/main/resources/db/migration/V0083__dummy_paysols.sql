@@ -1,0 +1,2 @@
+INSERT INTO code_store_item (id, code_store_type_id, caption, command, created_by, created_on, modified_by, modified_on)
+VALUES (1880, 18, '{"en":"Online payment (provider was not selected yet)", "hu":"Online fizetés (szolgáltató még nem lett kiválasztva)"}', 'SOME_KIND_OF_ONLINE_PAYMENT', 2, NOW(), 2, NOW());

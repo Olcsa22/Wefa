@@ -1,0 +1,148 @@
+<script>
+
+	function checkIfTwoFactorAuthIsNeeded() {		
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+			
+				var resultText = xhttp.responseText;
+				var lf = document.getElementById('loginForm');
+				
+				console.log("resultText: " + resultText);
+				
+				if ('yes' == resultText) {
+					lf.setAttribute('data-has-tfc', 'yes');
+					
+					var b = document.getElementById('tfcBlock');
+					var f = document.getElementById('tfc');
+					
+					b.style.display = "flex";
+					f.setAttribute("required", "required");
+					f.removeAttribute("hidden");
+					
+					f.focus();
+					
+				} else {
+					lf.setAttribute('data-has-tfc', 'no');
+					lf.submit();
+				}
+				
+			}
+		};
+				
+		var struname = window.btoa(document.getElementById('username').value);
+		struname.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+		
+		xhttp.open("GET", "./action/checkIfTwoFactorAuthIsNeeded?u=" + struname, true);
+  		xhttp.send();	
+	}
+
+	function onLoginFormSubmitWithTwoFactor(){
+		var lf = document.getElementById('loginForm');
+	
+		if (lf.getAttribute('data-has-tfc') == '?') {
+			checkIfTwoFactorAuthIsNeeded();
+			return false;
+		}
+	
+		lf.action += window.location.hash;
+		
+		return true;
+	}
+	
+	function onLoginFormSubmit(){
+		var lf = document.getElementById('loginForm');
+		lf.action += window.location.hash;
+	}
+</script>
+
+<style>
+
+    .btn-facebook {
+        color: #fff;
+        background-color: #3b5998;
+        border-color: #3b5998;
+    }
+
+    .btn-facebook:hover {
+        color: #fff;
+        background-color: #30497c;
+        border-color: #2d4373;
+    }
+
+    .btn-facebook:focus, .btn-facebook.focus {
+        box-shadow: 0 0 0 0.2rem rgba(59, 89, 152, 0.5);
+    }
+
+    .btn-facebook.disabled, .btn-facebook:disabled {
+        color: #fff;
+        background-color: #3b5998;
+        border-color: #3b5998;
+    }
+
+    .btn-facebook:not (:disabled ):not (.disabled ):active, .btn-facebook:not (:disabled ):not (.disabled ).active, .show>.btn-facebook.dropdown-toggle {
+        color: #fff;
+        background-color: #2d4373;
+        border-color: #293e6a;
+    }
+
+    .btn-facebook:not (:disabled ):not (.disabled ):active:focus, .btn-facebook:not (:disabled ):not (.disabled ).active:focus, .show>.btn-facebook.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.2rem rgba(59, 89, 152, 0.5);
+    }
+
+</style>
+
+#if($twoFactorAuthEnabled)
+<form method="post" action="../api/login" id="loginForm" onsubmit="return onLoginFormSubmitWithTwoFactor();" data-has-tfc="?">
+#else 
+## ha mar globalisan sincs bekapcsolva (mj. a data-has-tfc azt mutatja, hogy az adott usernek be van-e kapcsolva)
+<form method="post" action="../api/login" id="loginForm" onsubmit="onLoginFormSubmit();">
+#end    
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-fw fa-user" aria-hidden="true"></i>
+            </span>
+        </div>
+        <input id="username" class="form-control" type="text" name="username" required autocomplete="username" autocapitalize="off" autocorrect="off" />
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-fw fa-key" aria-hidden="true"></i>
+            </span>
+        </div>
+        <input id="password" class="form-control" type="password" name="password" required autocomplete="current-password" autocapitalize="off" autocorrect="off" />
+    </div>
+    
+    #if($twoFactorAuthEnabled) 
+    <div class="input-group mb-3" id="tfcBlock" style="display: none">
+        <div class="input-group-prepend">
+            <span class="input-group-text"> <i class="fa fa-fw fa-mobile" aria-hidden="true"></i>
+            </span>
+        </div>
+        <input id="tfc" class="form-control" type="password" name="tfc" autocomplete="off" autocapitalize="off" autocorrect="off" data-lpignore="true" placeholder="$twoFactorCodePlaceholder" hidden />
+    </div>
+	#end
+	
+    <div class="form-check text-left mb-3">
+        #if(!$rememberMeAlways)
+            <input class="form-check-input" type="checkbox" value="true" name="rmp" id="rmp"> <label class="form-check-label" for="rmp">$chkRememberMe</label>
+        #end
+    </div>
+
+    #if($notif)
+        <div class="alert alert-info">$notif</div>
+    #end
+
+    <div>
+        <button class="btn btn-secondary btn-block">
+            <i class="fa fa-sign-in" aria-hidden="true"></i> $btnLogin
+        </button>
+
+        #if($ssoEnabled)
+            <a href="/api/public/connect/facebook" class="btn btn-facebook btn-block"><i class="fa fa-facebook-official" aria-hidden="true"></i> $btnLoginFacebook </a>
+        #end
+
+    </div>
+
+</form>

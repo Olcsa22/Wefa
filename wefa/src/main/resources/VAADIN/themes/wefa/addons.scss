@@ -1,0 +1,22 @@
+/* This file is automatically managed and will be overwritten from time to time. */
+/* Do not manually edit this file. */
+
+/* Provided by materialicons-3.0.1.jar */
+@import "../../../VAADIN/addons/materialicons/materialicons.scss";
+
+
+/* Provided by spinkit-1.0.0.jar */
+@import "../../../VAADIN/addons/spinkit/spinkit.scss";
+
+
+/* Provided by contexthelp-3.0.0.jar */
+@import "../../../VAADIN/addons/contexthelp/contexthelp.scss";
+
+
+/* Import and include this mixin into your project theme to include the addon themes */
+@mixin addons {
+	@include materialicons;
+	@include spinkit;
+	@include contexthelp;
+}
+

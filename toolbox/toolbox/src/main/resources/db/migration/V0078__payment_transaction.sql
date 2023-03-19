@@ -1,0 +1,1 @@
+ALTER TABLE payment_transaction ADD COLUMN status_check_disabled_poll BOOLEAN;

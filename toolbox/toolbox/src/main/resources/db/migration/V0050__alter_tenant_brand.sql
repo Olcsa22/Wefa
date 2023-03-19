@@ -1,0 +1,1 @@
+ALTER TABLE tenant ADD COLUMN brand VARCHAR(50);

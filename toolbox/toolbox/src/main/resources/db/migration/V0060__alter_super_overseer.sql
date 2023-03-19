@@ -1,0 +1,1 @@
+UPDATE code_store_item SET caption = '{"en": "tenant overseer role", "hu": "cég felügyelő jogosultság"}', command = 'ROLE_TENANT_OVERSEER' WHERE id = 116;

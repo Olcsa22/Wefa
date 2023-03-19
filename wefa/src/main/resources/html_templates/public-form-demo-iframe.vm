@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+
+<!-- https://github.com/davidjbradshaw/iframe-resizer/blob/master/docs/parent_page/options.md -->
+<!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.6/ie8.polyfils.min.js" integrity="sha256-4dwy+5CQ3oXA6uwe3po7puiZoevaqdCF2fdDme5nw0o=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.6/iframeResizer.min.js" integrity="sha256-5r9UPUd91Mxmbs8eITXPUExaxe32XhIbQTXAluac41M=" crossorigin="anonymous"></script>
+-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.9/iframeResizer.min.js" integrity="sha256-I8J1+En2L9RRMC9nNz2CB0mOBZREXlPHV53Prl65OP0=" crossorigin="anonymous"></script>
+
+<meta name="robots" content="noindex, nofollow">
+
+</head>
+
+<body>
+
+<div style="padding: 10px;">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ac luctus odio. Sed ligula tellus, blandit nec pretium non, semper porttitor ligula. Pellentesque sollicitudin quis tellus quis fermentum. Fusce ut varius orci. Duis sagittis malesuada risus. Curabitur eros purus, molestie sit amet mi in, scelerisque accumsan est. Nullam euismod euismod varius. Integer et vehicula sapien.
+</div>
+
+<div style="padding: 10px;">
+Maecenas eget nibh non libero accumsan porta. Proin lacinia libero at lacus luctus maximus. Cras sed augue volutpat, dictum augue vel, fermentum sem. Etiam urna lectus, dictum aliquam commodo fringilla, consequat id est. Donec iaculis pellentesque metus, quis sollicitudin augue eleifend non. Proin consectetur lorem in tincidunt mollis. Pellentesque tellus massa, tristique euismod velit rutrum, tempus imperdiet arcu. Pellentesque et sapien ut odio pharetra consectetur at eu leo. Praesent turpis mi, euismod eget feugiat ac, placerat et mi. Sed condimentum maximus felis vel commodo. Suspendisse nec porttitor lectus, et ultricies est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget ante placerat, aliquet metus vitae, ornare lectus.
+</div>
+
+<div style="padding: 10px;">
+<iframe src="$iframeUrl" style="width: 700px; border: 1px solid grey; min-height: 200px;" id="testFrame" scrolling="no"></iframe>
+
+<script>
+  iFrameResize({ log: true, heightCalculationMethod: 'taggedElement', autoResize: true}, '#testFrame'); 
+</script> 
+</div>
+
+<div style="padding: 10px;">
+Fusce felis nulla, elementum eget vulputate eget, porta eget nulla. Etiam cursus luctus condimentum. Phasellus tristique, quam ac consequat semper, felis dolor congue est, ut consectetur lacus mauris et nunc. Pellentesque vel dui eros. Vestibulum imperdiet justo tellus, volutpat suscipit tortor commodo sed. Pellentesque sed hendrerit justo. Nullam a ullamcorper eros.
+</div>
+
+</body>
+</html>
+
+ 

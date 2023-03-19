@@ -1,0 +1,1 @@
+ALTER TABLE tenant_info ADD COLUMN extra_data_5 VARCHAR(100);

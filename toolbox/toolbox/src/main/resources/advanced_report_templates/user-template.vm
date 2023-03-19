@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" >
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta name="title" content="User report"/>
+    <meta name="subject" content="User report"/>
+
+    <style type="text/css">
+
+        @page {
+            size: a4 portrait;
+        }
+
+        @font-face {
+            font-family: LiberationSans-Regular;
+            src: url($fontFileFilename);
+            -fs-pdf-font-embed: embed;
+            -fs-pdf-font-encoding: Identity-H;
+        }
+
+        img {
+            page-break-inside: avoid;
+        }
+
+        body {
+            font-size: 12pt;
+            font-family: LiberationSans-Regular;
+            -fs-pdf-font-embed: embed;
+            -fs-pdf-font-encoding: Identity-H;
+        }
+
+        td {
+            padding: 4pt;
+            font-size: 12pt;
+        }
+
+        #reportingTemplate {
+            overflow: hidden;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="reportingTemplate">
+
+        <h1>$REPORT_NAME</h1>
+
+        <table>
+
+        #foreach( $record in $REPORT_VALUE )
+
+            <tr>
+                <td>$record.id</td>        
+                <td>$record.username</td>
+                
+                <td>
+                #if($record.givenName)
+                	$record.givenName
+                #end
+                </td>
+                
+                <td>
+                #if($record.familyName)
+                	$record.familyName
+                #end
+                </td>
+                
+                <td>$record.createdOn</td>
+            </tr>
+
+        #end
+
+        </table>
+
+    </div>
+
+
+</body>
+</html>

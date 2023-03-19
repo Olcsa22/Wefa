@@ -1,0 +1,1 @@
+ALTER TABLE email_template DROP COLUMN tenant_id;

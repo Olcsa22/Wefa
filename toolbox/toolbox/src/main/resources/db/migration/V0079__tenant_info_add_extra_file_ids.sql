@@ -1,0 +1,1 @@
+ALTER TABLE tenant_info ADD COLUMN file_ids_7 JSONB;

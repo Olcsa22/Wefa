@@ -1,0 +1,6 @@
+#export
+liquibase --driver=org.postgresql.Driver --classpath=C:\jdbc-drivers\PostgreSQL\42.2.5\postgresql-42.2.5.jar --changeLogFile=db.changelog.xml --url="jdbc:postgresql://localhost:5432/toolbox_tester" --username=postgres --password=postgres generateChangeLog
+
+
+#import
+liquibase --driver=com.microsoft.sqlserver.jdbc.SQLServerDriver --classpath=C:\jdbc-drivers\SQLServer\8.2.2\mssql-jdbc-8.2.2.jre8.jar --changeLogFile=db.changelog_modified.xml --url="jdbc:sqlserver://LANOGA-KISSG\SQLEXPRESS;database=toolbox_tester" --username=sa --password=admin1234 update

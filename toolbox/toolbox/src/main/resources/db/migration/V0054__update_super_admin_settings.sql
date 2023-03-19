@@ -1,0 +1,1 @@
+UPDATE auth_user_key_value_settings SET kv_value = '["0:1"]' WHERE tenant_id = 1 AND user_id = 1;

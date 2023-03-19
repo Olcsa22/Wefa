@@ -1,0 +1,1 @@
+docker volume create minio1-1

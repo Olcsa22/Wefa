@@ -1,0 +1,1 @@
+ALTER TABLE file_descriptor ALTER COLUMN file_path TYPE VARCHAR(1024);

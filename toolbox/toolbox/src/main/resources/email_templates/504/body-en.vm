@@ -1,0 +1,16 @@
+<p>Dear $recipient!</p>
+
+<p><br></p>
+
+<p>A new user has successfully registered: $data.</p>
+<p>This is an automated message about user registration (You do not need to do anything).</p>
+
+<p><br></p>
+
+<p><strong>Best regards,</strong></p>
+<p>$tenant</p>
+<p>$appname</p>
+
+<p><br></p>
+
+<p>$currentDate</p>

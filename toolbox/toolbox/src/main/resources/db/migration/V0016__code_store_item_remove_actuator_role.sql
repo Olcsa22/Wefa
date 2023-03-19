@@ -1,0 +1,1 @@
+DELETE FROM code_store_item WHERE id = 108 AND command = 'ACTUATOR';

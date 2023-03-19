@@ -1,0 +1,1 @@
+docker run -d -p 9000:9000 -m 2048m --cpus=4 --name minio1 -e "MINIO_FORCE_NEW_KEYS=no" -e "MINIO_ACCESS_KEY=test" -e "MINIO_SECRET_KEY=Abc12345" -v minio1-1:/data bitnami/minio:2020.10.12

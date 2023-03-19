@@ -1,0 +1,13 @@
+<p>Dear $recipient!</p>
+
+<p><br></p>
+
+<p>Your account has been created.</p>
+<p>You can access it with this password: $data</p>
+<p><strong>Login: </strong>$url</p>
+
+<p><br></p>
+
+<p><strong>Best regards,</strong></p>
+<p>$tenant</p>
+<p>$appname</p>

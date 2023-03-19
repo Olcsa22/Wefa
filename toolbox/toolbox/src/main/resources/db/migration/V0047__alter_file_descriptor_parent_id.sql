@@ -1,0 +1,1 @@
+ALTER TABLE file_descriptor ADD COLUMN parent_id INT REFERENCES file_descriptor(id);

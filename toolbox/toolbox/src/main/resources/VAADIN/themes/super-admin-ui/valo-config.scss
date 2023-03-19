@@ -1,0 +1,8 @@
+$v-font-family: Helvetica, Arial, arial, sans-serif;
+
+@import "../valo/valo.scss";
+
+@mixin valo-config {
+  /* @include addons; */
+  @include valo;
+}

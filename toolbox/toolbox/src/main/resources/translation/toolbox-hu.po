@@ -1,0 +1,2988 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2020-09-10 18:35+0200\n"
+"PO-Revision-Date: 2020-09-10 19:00+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ../../java\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: ;I.trc:1c,2;CrudGridColumn:1\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: hu/lanoga/toolbox/auth/LoginController.java:112
+msgctxt "Button"
+msgid "Login"
+msgstr "Bejelentkezés"
+
+#: hu/lanoga/toolbox/auth/LoginController.java:113
+msgctxt "Button"
+msgid "Login with Facebook"
+msgstr "Bejelentkezés Facebookkal"
+
+#: hu/lanoga/toolbox/auth/LoginController.java:114
+msgctxt "Button"
+msgid "Forgotten password"
+msgstr "Elfelejtett jelszó"
+
+#: hu/lanoga/toolbox/auth/LoginController.java:115
+msgctxt "Button"
+msgid "Remember me (optional, uses cookie)"
+msgstr "Maradjak bejelentkezve (opcionális, sütit használ)"
+
+#: hu/lanoga/toolbox/auth/LoginController.java:119
+msgctxt "Button"
+msgid "Two factor code"
+msgstr "Kétlépcsős azonosítás megerősítő kódja"
+
+#: hu/lanoga/toolbox/auth/LoginController.java:125
+msgctxt "Notification"
+msgid "Wrong username or password!"
+msgstr "Helytelen felhasználónév vagy jelszó!"
+
+#: hu/lanoga/toolbox/auth/LoginController.java:180
+#: hu/lanoga/toolbox/auth/LoginController.java:192
+msgctxt "Caption"
+msgid "Back to main page"
+msgstr "Vissza a főoldalra"
+
+#: hu/lanoga/toolbox/codestore/CodeStoreItem.java:35
+msgctxt "Caption"
+msgid "Code store type"
+msgstr "Szótár típus"
+
+#: hu/lanoga/toolbox/codestore/CodeStoreItem.java:36
+#: hu/lanoga/toolbox/codestore/CodeStoreType.java:25
+msgctxt "Caption"
+msgid "Caption"
+msgstr "Felirat"
+
+#: hu/lanoga/toolbox/codestore/CodeStoreItem.java:37
+msgctxt "Caption"
+msgid "Command"
+msgstr "Parancs"
+
+#: hu/lanoga/toolbox/codestore/CodeStoreItem.java:38
+#: hu/lanoga/toolbox/codestore/CodeStoreType.java:27
+#: hu/lanoga/toolbox/email/EmailTemplate.java:38
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:45
+#: hu/lanoga/toolbox/tenant/Tenant.java:45 hu/lanoga/toolbox/user/User.java:82
+msgctxt "Caption"
+msgid "Enabled"
+msgstr "Engedélyezve"
+
+#: hu/lanoga/toolbox/codestore/CodeStoreItem.java:62
+#: hu/lanoga/toolbox/codestore/CodeStoreType.java:37
+#: hu/lanoga/toolbox/email/EmailTemplate.java:46
+msgid "Identifier"
+msgstr "Azonosító"
+
+#: hu/lanoga/toolbox/codestore/CodeStoreItem.java:70
+msgid "Code store type"
+msgstr "Szótár típus"
+
+#: hu/lanoga/toolbox/codestore/CodeStoreItem.java:80
+#: hu/lanoga/toolbox/codestore/CodeStoreType.java:46
+msgid "Caption"
+msgstr "Felirat"
+
+#: hu/lanoga/toolbox/codestore/CodeStoreItem.java:84
+#: hu/lanoga/toolbox/codestore/CodeStoreType.java:54
+#: hu/lanoga/toolbox/email/EmailTemplate.java:68
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:164
+#: hu/lanoga/toolbox/tenant/Tenant.java:242
+msgid "Enabled"
+msgstr "Engedélyezve"
+
+#: hu/lanoga/toolbox/codestore/CodeStoreItem.java:87
+msgid "Command"
+msgstr "Parancs"
+
+#: hu/lanoga/toolbox/codestore/CodeStoreType.java:26
+msgctxt "Caption"
+msgid "Expandable"
+msgstr "Bővíthető"
+
+#: hu/lanoga/toolbox/codestore/CodeStoreType.java:50
+msgid "Expandable"
+msgstr "Bővíthető"
+
+#: hu/lanoga/toolbox/email/Email.java:35
+msgctxt "Caption"
+msgid "From email"
+msgstr "Feladó e-mail"
+
+#: hu/lanoga/toolbox/email/Email.java:36
+msgctxt "Caption"
+msgid "To email"
+msgstr "Címzett e-mail"
+
+#: hu/lanoga/toolbox/email/Email.java:37
+#: hu/lanoga/toolbox/email/EmailTemplate.java:36
+msgctxt "Caption"
+msgid "Subject"
+msgstr "Tárgy"
+
+#: hu/lanoga/toolbox/email/Email.java:38
+msgctxt "Caption"
+msgid "Body"
+msgstr "Tartalom"
+
+#: hu/lanoga/toolbox/email/Email.java:39
+msgctxt "Caption"
+msgid "Plain text"
+msgstr "Egyszerű szöveg"
+
+#: hu/lanoga/toolbox/email/Email.java:40
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:142
+msgctxt "Caption"
+msgid "Status"
+msgstr "Státusz"
+
+#: hu/lanoga/toolbox/email/Email.java:41
+msgctxt "Caption"
+msgid "Attempt"
+msgstr "Próbálkozás"
+
+#: hu/lanoga/toolbox/email/Email.java:42
+msgctxt "Caption"
+msgid "Error message"
+msgstr "Hibaüzenet"
+
+#: hu/lanoga/toolbox/email/Email.java:45
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:53
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:189
+#: hu/lanoga/toolbox/payment/PaymentTransactionRawLog.java:37
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:75
+#: hu/lanoga/toolbox/tenant/Tenant.java:95
+#: hu/lanoga/toolbox/tenant/TenantKeyValueSettings.java:45
+#: hu/lanoga/toolbox/user/User.java:90
+#: hu/lanoga/toolbox/user/UserKeyValueSettings.java:47
+msgctxt "Caption"
+msgid "Record created by"
+msgstr "Rekord készítője"
+
+#: hu/lanoga/toolbox/email/Email.java:47
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:57
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:193
+#: hu/lanoga/toolbox/payment/PaymentTransactionRawLog.java:41
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:79
+#: hu/lanoga/toolbox/tenant/Tenant.java:98
+#: hu/lanoga/toolbox/tenant/TenantKeyValueSettings.java:47
+#: hu/lanoga/toolbox/user/User.java:92
+#: hu/lanoga/toolbox/user/UserKeyValueSettings.java:49
+msgctxt "Caption"
+msgid "Record created on"
+msgstr "Rekord létrehozva"
+
+#: hu/lanoga/toolbox/email/Email.java:49
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:61
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:197
+#: hu/lanoga/toolbox/tenant/Tenant.java:101
+#: hu/lanoga/toolbox/tenant/TenantKeyValueSettings.java:49
+#: hu/lanoga/toolbox/user/User.java:94
+#: hu/lanoga/toolbox/user/UserKeyValueSettings.java:51
+msgctxt "Caption"
+msgid "Record modified by (last)"
+msgstr "Rekord módosítója (legutolsó)"
+
+#: hu/lanoga/toolbox/email/Email.java:51
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:65
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:201
+#: hu/lanoga/toolbox/tenant/Tenant.java:104
+#: hu/lanoga/toolbox/tenant/TenantKeyValueSettings.java:51
+#: hu/lanoga/toolbox/user/User.java:96
+#: hu/lanoga/toolbox/user/UserKeyValueSettings.java:53
+msgctxt "Caption"
+msgid "Record modified on"
+msgstr "Rekord módosítva"
+
+#: hu/lanoga/toolbox/email/Email.java:68
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:119
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:221
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:106
+#: hu/lanoga/toolbox/tenant/Tenant.java:120
+#: hu/lanoga/toolbox/tenant/TenantKeyValueSettings.java:83
+#: hu/lanoga/toolbox/user/User.java:120
+#: hu/lanoga/toolbox/user/UserKeyValueSettings.java:91
+msgid "SysID"
+msgstr "SysID"
+
+#: hu/lanoga/toolbox/email/Email.java:71
+msgid "From email"
+msgstr "Feladó e-mail"
+
+#: hu/lanoga/toolbox/email/Email.java:74
+msgid "To email"
+msgstr "Címzett e-mail"
+
+#: hu/lanoga/toolbox/email/Email.java:77
+#: hu/lanoga/toolbox/email/EmailTemplate.java:65
+msgid "Subject"
+msgstr "Tárgy"
+
+#: hu/lanoga/toolbox/email/Email.java:82
+msgid "Plain text"
+msgstr "Egyszerű szöveg"
+
+#: hu/lanoga/toolbox/email/Email.java:85
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:335
+msgid "Status"
+msgstr "Státusz"
+
+#: hu/lanoga/toolbox/email/Email.java:88
+msgid "Attempt"
+msgstr "Próbálkozás"
+
+#: hu/lanoga/toolbox/email/Email.java:91
+msgid "Error message"
+msgstr "Hibaüzenet"
+
+#: hu/lanoga/toolbox/email/Email.java:98
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:172
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:427
+#: hu/lanoga/toolbox/user/User.java:197
+msgid "Record created by"
+msgstr "Rekord készítője"
+
+#: hu/lanoga/toolbox/email/Email.java:101
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:175
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:430
+#: hu/lanoga/toolbox/payment/PaymentTransactionRawLog.java:72
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:183
+#: hu/lanoga/toolbox/user/User.java:187
+msgid "Record created on"
+msgstr "Rekord létrehozva"
+
+#: hu/lanoga/toolbox/email/Email.java:104
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:436
+#: hu/lanoga/toolbox/user/User.java:201
+msgid "Record modified by"
+msgstr "Rekord módosítva"
+
+#: hu/lanoga/toolbox/email/Email.java:107 hu/lanoga/toolbox/user/User.java:193
+msgid "Record modified on"
+msgstr "Rekord módosítva"
+
+#: hu/lanoga/toolbox/email/EmailTemplate.java:35
+msgctxt "Caption"
+msgid "Template code"
+msgstr "Sablon kód"
+
+#: hu/lanoga/toolbox/email/EmailTemplate.java:37
+msgctxt "Caption"
+msgid "Content"
+msgstr "Tartalom"
+
+#: hu/lanoga/toolbox/email/EmailTemplate.java:54
+msgid "Template code"
+msgstr "Sablon kód"
+
+#: hu/lanoga/toolbox/exception/ErrorPageManager.java:29
+msgctxt "ErrorMessage"
+msgid "Error"
+msgstr "Hiba"
+
+#: hu/lanoga/toolbox/exception/ErrorPageManager.java:37
+msgctxt "ErrorMessage"
+msgid "Page not found!"
+msgstr "Oldal nem található!"
+
+#: hu/lanoga/toolbox/exception/ErrorPageManager.java:41
+msgctxt "Caption"
+msgid "Access denied!"
+msgstr "Hozzáférés megtagadva!"
+
+#: hu/lanoga/toolbox/exception/ErrorPageManager.java:45
+msgctxt "ErrorMessage"
+msgid "Server error!"
+msgstr "Szerver hiba!"
+
+#: hu/lanoga/toolbox/exception/ErrorPageManager.java:52
+msgctxt "ErrorMessage"
+msgid "Other error!"
+msgstr "Egyéb hiba!"
+
+#: hu/lanoga/toolbox/exception/ErrorPageManager.java:57
+msgctxt "BackLinkMessage"
+msgid "Go back"
+msgstr "Vissza"
+
+#: hu/lanoga/toolbox/file/FileStoreService.java:1282
+msgctxt "Notification"
+msgid "Cannot lock (already has a lock)!"
+msgstr "Nem zárolható (már zárolva van)!"
+
+#: hu/lanoga/toolbox/file/FileStoreService.java:1303
+msgctxt "Notification"
+msgid "Cannot unlock (yet)!"
+msgstr "Nem feloldható (még)!"
+
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:38
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:128
+msgctxt "Caption"
+msgid "Payment provider"
+msgstr "Fizetési szolgáltató"
+
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:40
+#, fuzzy
+msgctxt "Caption"
+msgid "Global config"
+msgstr "Globális konfiguráció"
+
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:42
+msgctxt "Caption"
+msgid "Config"
+msgstr "Config"
+
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:43
+#: hu/lanoga/toolbox/tenant/Tenant.java:81
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:746
+msgctxt "Caption"
+msgid "Files"
+msgstr "Fájlok"
+
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:49
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:104
+#: hu/lanoga/toolbox/payment/PaymentTransactionRawLog.java:33
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:71
+#: hu/lanoga/toolbox/tenant/Tenant.java:92
+#: hu/lanoga/toolbox/tenant/TenantKeyValueSettings.java:43
+#: hu/lanoga/toolbox/user/User.java:86
+#: hu/lanoga/toolbox/user/UserKeyValueSettings.java:45
+#: hu/lanoga/toolbox/vaadin/component/TenantOverseerComponent.java:71
+msgctxt "Caption"
+msgid "SysID"
+msgstr "SysID"
+
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:131
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:289
+msgid "Payment provider"
+msgstr "Fizetési szolgáltató"
+
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:158
+msgid "Global config"
+msgstr "Globális konfiguráció"
+
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:181
+msgid "Record modified by (last)"
+msgstr "Rekord módosítója (legutolsó)"
+
+#: hu/lanoga/toolbox/payment/PaymentConfig.java:184
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:439
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:189
+msgid "Record modified on (last)"
+msgstr "Rekord módosítója (legutolsó)"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:101
+#: hu/lanoga/toolbox/user/User.java:88
+msgctxt "Caption"
+msgid "GID"
+msgstr "GID"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:107
+msgctxt "Caption"
+msgid "Referred transaction record"
+msgstr "Hivatkozott tranzakció rekord"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:110
+msgctxt "Caption"
+msgid "Order ID"
+msgstr "Rendelés ID"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:113
+msgctxt "Caption"
+msgid "Order info label"
+msgstr "Rendelés információ/felirat"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:116
+msgctxt "Caption"
+msgid "Customer user"
+msgstr "Vásárló felhasználó"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:119
+msgctxt "Caption"
+msgid "Customer ID"
+msgstr "Vásárló ID"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:122
+msgctxt "Caption"
+msgid "Customer email"
+msgstr "Vásárló e-mail"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:125
+msgctxt "Caption"
+msgid "LCU GID"
+msgstr "LCU GID"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:131
+msgctxt "Caption"
+msgid "Raw ID (payment prov.)"
+msgstr "Nyers ID (fizetési szolg.)"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:134
+msgctxt "Caption"
+msgid "Payment operation type"
+msgstr "Fizetési művelet típusa"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:137
+msgctxt "Caption"
+msgid "Original currency"
+msgstr "Eredeti pénznem"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:140
+msgctxt "Caption"
+msgid "Original amount"
+msgstr "Eredeti összeg"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:151
+msgctxt "Caption"
+msgid "Order details"
+msgstr "Rendelés részletei"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:155
+msgctxt "Caption"
+msgid "Back office notes"
+msgstr "Back office jegyzetek"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:159
+msgctxt "Caption"
+msgid "Documents"
+msgstr "Dokumentumok"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:165
+msgctxt "Caption"
+msgid "Provider specific input"
+msgstr "Szolgáltató specifikus input"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:169
+msgctxt "Caption"
+msgid "Provider specific processing data"
+msgstr "Szolgáltató specifikus feldolgozási adatok"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:173
+msgctxt "Caption"
+msgid "Provider specific output"
+msgstr "Szolgáltató specifikus output"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:179
+msgctxt "Caption"
+msgid "Payment provider confirm UI URL"
+msgstr "Fizetési szolgáltató megerősítő UI URL"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:183
+msgctxt "Caption"
+msgid "Return URL"
+msgstr "Visszatérési URL"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:207
+msgctxt "Caption"
+msgid "Last status check request"
+msgstr "Utolsó státusz ellenőrzési kérelem"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:211
+msgctxt "Caption"
+msgid "Last status check reserved for"
+msgstr "Utolsó státusz ellenőrzés (lefoglava)"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:226
+msgid "GID"
+msgstr "GID"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:237
+msgid "Referred transaction record (SysID)"
+msgstr "Hivatkozott tranz. rekord (SysID)"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:244
+msgid "Customer ID"
+msgstr "Vásárló ID"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:247
+msgid "Customer user"
+msgstr "Vásárló felhasználó"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:252
+msgid "Customer email"
+msgstr "Vásárló e-mail"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:255
+msgid "LCU GID"
+msgstr "LCU GID"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:262
+msgid "Order ID"
+msgstr "Rendelés ID"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:269
+msgid "Order info label"
+msgstr "Rendelés információ/felirat"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:300
+msgid "Raw ID (payment prov.)"
+msgstr "Nyers ID (fizetési szolg.)"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:309
+msgid "Payment operation type"
+msgstr "Fizetési művelet típusa"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:316
+msgid "Original currency"
+msgstr "Eredeti pénznem"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:320
+msgid "Original amount"
+msgstr "Eredeti összeg"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:375
+msgid "Payment provider confirm UI URL"
+msgstr "Fizetési szolgáltató megerősítő UI URL"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:382
+msgid "Return URL"
+msgstr "Visszatérési URL"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:411
+msgid "Back office notes"
+msgstr "Back office jegyzetek"
+
+#: hu/lanoga/toolbox/payment/PaymentTransaction.java:419
+msgid "Manual status change"
+msgstr "Manuális státusz váltás"
+
+#: hu/lanoga/toolbox/payment/PaymentTransactionRawLog.java:28
+msgctxt "Caption"
+msgid "Payment transaction record"
+msgstr "Fizetési tranzakció rekord"
+
+#: hu/lanoga/toolbox/payment/PaymentTransactionRawLog.java:29
+msgctxt "Caption"
+msgid "LOG data"
+msgstr "Napló (LOG)"
+
+#: hu/lanoga/toolbox/payment/PaymentTransactionRawLog.java:60
+msgid "Payment transaction record"
+msgstr "Fizetési tranzakció rekord"
+
+#: hu/lanoga/toolbox/payment/PaymentTransactionRawLog.java:67
+msgid "LOG data (short)"
+msgstr "Napló (LOG) (rövid)"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:38
+msgctxt "Caption"
+msgid "Company name"
+msgstr "Cég neve"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:39
+#: hu/lanoga/toolbox/quickcontact/QuickContactService.java:57
+#: hu/lanoga/toolbox/tenant/Tenant.java:42
+msgctxt "Caption"
+msgid "Name"
+msgstr "Név"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:40
+#: hu/lanoga/toolbox/user/User.java:79
+msgctxt "Caption"
+msgid "Phone number"
+msgstr "Telefonszám"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:41
+#: hu/lanoga/toolbox/quickcontact/QuickContactService.java:61
+#: hu/lanoga/toolbox/user/User.java:75
+#: hu/lanoga/toolbox/vaadin/ForgottenPasswordUI.java:91
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:148
+msgctxt "Caption"
+msgid "Email"
+msgstr "E-mail"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:42
+#: hu/lanoga/toolbox/tenant/Tenant.java:61
+msgctxt "Caption"
+msgid "Country"
+msgstr "Ország"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:43
+msgctxt "Caption"
+msgid "City"
+msgstr "Város"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:44
+msgctxt "Caption"
+msgid "Address (details)"
+msgstr "Cím részletei"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:47
+msgctxt "Caption"
+msgid "Extra field 1 (name)"
+msgstr "Extra mező 1 (név)"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:49
+msgctxt "Caption"
+msgid "Extra field 1 (value)"
+msgstr "Extra mező 1 (név)"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:51
+msgctxt "Caption"
+msgid "Extra field 2 (name)"
+msgstr "Extra mező 2 (név)"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:53
+msgctxt "Caption"
+msgid "Extra field 2 (value)"
+msgstr "Extra mező 2 (név)"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:55
+msgctxt "Caption"
+msgid "Extra field 3 (name)"
+msgstr "Extra mező 3 (név)"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:57
+msgctxt "Caption"
+msgid "Extra field 3 (value)"
+msgstr "Extra mező 3 (név)"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:59
+#: hu/lanoga/toolbox/tenant/Tenant.java:72 hu/lanoga/toolbox/user/User.java:81
+msgctxt "Caption"
+msgid "Notes"
+msgstr "Jegyzetek"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:63
+msgctxt "Caption"
+msgid "Origin"
+msgstr "Eredet"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:67
+msgctxt "Caption"
+msgid "Email notification (sales) was sent"
+msgstr "Email értesítés kiküldve (sales)"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:89
+msgctxt "Notification"
+msgid "Please fill these fields: name, email and/or phone number!"
+msgstr "Kérjük töltse ki a következő mezőket: név, e-mail és/vagy telefonszám!"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:99
+msgctxt "Value"
+msgid "manual add"
+msgstr "kézi hozzáadás"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:113
+msgid "Company"
+msgstr "Cég neve"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:118
+msgid "Name"
+msgstr "Név"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:122
+msgid "Phone"
+msgstr "Telefon"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:126
+#: hu/lanoga/toolbox/user/User.java:170
+msgid "Email"
+msgstr "Email"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:130
+msgid "Country"
+msgstr "Ország"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:134
+msgid "City"
+msgstr "Város"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:138
+msgid "Address (details)"
+msgstr "Cím részletei"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:142
+msgid "Origin"
+msgstr "Eredet/forrás"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:148
+msgid "Extra field 1 (name)"
+msgstr "Extra mező 1 (név)"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:152
+msgid "Extra field 1 (value)"
+msgstr "Extra mező 1 (érték)"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:156
+msgid "Extra field 2 (name)"
+msgstr "Extra mező 2 (név)"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:160
+msgid "Extra field 2 (value)"
+msgstr "Extra mező 2 (érték)"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:164
+msgid "Extra field 3 (name)"
+msgstr "Extra mező 3 (név)"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:168
+msgid "Extra field 3 (value)"
+msgstr "Extra mező 3 (érték)"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:174
+msgid "Notes"
+msgstr "Jegyzetek"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContact.java:177
+msgid "Email notification (sales) was sent"
+msgstr "Email értesítés kiküldve (sales)"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContactPublicController.java:248
+msgctxt "Notification"
+msgid "Please fill these fields: name, email and/or phone"
+msgstr "Kérjük töltse ki a következő mezőket: név, email és/vagy telefonszám"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContactPublicController.java:252
+msgctxt "Notification"
+msgid "Successful submit!"
+msgstr "Sikeres küldés!"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContactPublicController.java:333
+msgctxt "Label"
+msgid "Company name:"
+msgstr "Cég neve:"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContactPublicController.java:334
+msgctxt "Label"
+msgid "Name:"
+msgstr "Név:"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContactPublicController.java:335
+msgctxt "Label"
+msgid "Email:"
+msgstr "Email:"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContactPublicController.java:336
+msgctxt "Label"
+msgid "Phone:"
+msgstr "Telefon:"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContactPublicController.java:337
+msgctxt "Label"
+msgid "Country:"
+msgstr "Ország:"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContactPublicController.java:338
+msgctxt "Label"
+msgid "City:"
+msgstr "Város:"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContactPublicController.java:339
+msgctxt "Label"
+msgid "Address details:"
+msgstr "Cím részletei:"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContactPublicController.java:340
+msgctxt "Label"
+msgid "Notes:"
+msgstr "Jegyzetek:"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContactPublicController.java:342
+msgctxt "Button"
+msgid "Submit"
+msgstr "Beküldés"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContactPublicController.java:343
+msgctxt "Button"
+msgid "Go back"
+msgstr "Vissza"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContactService.java:66
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:144
+msgctxt "Caption"
+msgid "Phone"
+msgstr "Telefon"
+
+#: hu/lanoga/toolbox/quickcontact/QuickContactService.java:73
+msgctxt "Caption"
+msgid "Please log in to see the details"
+msgstr "Kérjük jelentkezzen be, hogy lássa a részleteket"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:43
+msgctxt "Caption"
+msgid "Company (full) name"
+msgstr "Cég (teljes) neve"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:44
+msgctxt "Caption"
+msgid "Brand"
+msgstr "Brand"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:47
+msgctxt "Caption"
+msgid "Contact name"
+msgstr "Kapcsolattartó neve"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:48
+msgctxt "Caption"
+msgid "Contact email"
+msgstr "Kapcsolattartó email címe"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:49
+msgctxt "Caption"
+msgid "Contact phone"
+msgstr "Kapcsolattartó telefonszáma"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:52
+msgctxt "Caption"
+msgid "Company tax number"
+msgstr "Cég adószáma"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:54
+msgctxt "Caption"
+msgid "Company registration number"
+msgstr "Cégjegyzékszám"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:56
+msgctxt "Caption"
+msgid "Company bank account number"
+msgstr "Cég bankszámla száma"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:59
+msgctxt "Caption"
+msgid "Company address"
+msgstr "Cég címe"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:63
+msgctxt "Caption"
+msgid "State"
+msgstr "Állam"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:65
+msgctxt "Caption"
+msgid "County"
+msgstr "Ország"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:67
+msgctxt "Caption"
+msgid "Zip code"
+msgstr "Irányítószám"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:69
+msgctxt "Caption"
+msgid "Address details"
+msgstr "Cím részletei"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:74
+msgctxt "Caption"
+msgid "Extra data 1"
+msgstr "Extra adat 1"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:76
+msgctxt "Caption"
+msgid "Extra data 2"
+msgstr "Extra adat 2"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:78
+msgctxt "Caption"
+msgid "Extra data 3"
+msgstr "Extra adat 3"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:86
+msgctxt "Caption"
+msgid "Images"
+msgstr "Képek"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:123
+msgid "Name (short/tenant)"
+msgstr "Név (rövid/tenant)"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:128
+msgid "Brand"
+msgstr "Brand"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:134
+msgid "Company tax number"
+msgstr "Cég adószáma"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:139
+msgid "Company registration number"
+msgstr "Cégjegyzékszám"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:144
+msgid "Company bank account number"
+msgstr "Cég bankszámla száma"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:151
+msgid "Company address country"
+msgstr "Cég címe (ország)"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:156
+msgid "Company address state"
+msgstr "Cég címe (állam)"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:161
+msgid "Company address county"
+msgstr "Cég címe (megye)"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:166
+msgid "Company address zip code"
+msgstr "Cég címe (irányítószám)"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:171
+msgid "Company address details"
+msgstr "Cég címe"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:178
+msgid "Contact name"
+msgstr "Kapcsolattartó neve"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:183
+msgid "Contact email"
+msgstr "Kapcsolattartó email címe"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:190
+msgid "Contact phone"
+msgstr "Kapcsolattartó telefonszáma"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:201
+msgid "Extra data 1"
+msgstr "Extra adat 1"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:207
+msgid "Extra data 2"
+msgstr "Extra adat 2"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:213
+msgid "Extra data 3"
+msgstr "Extra adat 3"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:219
+msgid "Extra data 4"
+msgstr "Extra adat 3"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:236
+msgid "Company (full) name"
+msgstr "Cég (teljes) neve"
+
+#: hu/lanoga/toolbox/tenant/Tenant.java:251
+msgid "Created on"
+msgstr "Rekord létrehozva"
+
+#: hu/lanoga/toolbox/tenant/TenantKeyValueSettings.java:38
+#: hu/lanoga/toolbox/user/UserKeyValueSettings.java:40
+msgctxt "Caption"
+msgid "Value"
+msgstr "Érték"
+
+#: hu/lanoga/toolbox/tenant/TenantKeyValueSettings.java:40
+#: hu/lanoga/toolbox/user/UserKeyValueSettings.java:42
+msgctxt "Caption"
+msgid "Manual edit allowed"
+msgstr "Kézi szerkesztés engedélyezett"
+
+#: hu/lanoga/toolbox/tenant/TenantKeyValueSettings.java:75
+#: hu/lanoga/toolbox/user/UserKeyValueSettings.java:77
+msgctxt "Caption"
+msgid "Setting"
+msgstr "Beállítás"
+
+#: hu/lanoga/toolbox/tenant/TenantKeyValueSettings.java:92
+#: hu/lanoga/toolbox/user/UserKeyValueSettings.java:105
+msgid "Setting"
+msgstr "Beállítás"
+
+#: hu/lanoga/toolbox/tenant/TenantKeyValueSettings.java:96
+#: hu/lanoga/toolbox/user/UserKeyValueSettings.java:110
+msgid "Value"
+msgstr "Érték"
+
+#: hu/lanoga/toolbox/user/User.java:74
+msgctxt "Caption"
+msgid "Username"
+msgstr "Felhasználónév"
+
+#: hu/lanoga/toolbox/user/User.java:76
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:132
+msgctxt "Caption"
+msgid "Title"
+msgstr "Titulus"
+
+#: hu/lanoga/toolbox/user/User.java:77
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:140
+msgctxt "Caption"
+msgid "First name"
+msgstr "Keresztnév"
+
+#: hu/lanoga/toolbox/user/User.java:78
+msgctxt "Caption"
+msgid "Last name"
+msgstr "Vezetéknév"
+
+#: hu/lanoga/toolbox/user/User.java:80
+msgctxt "Caption"
+msgid "Job title"
+msgstr "Munka megnevezése"
+
+#: hu/lanoga/toolbox/user/User.java:83
+#: hu/lanoga/toolbox/vaadin/component/RoleTemporaryOverrideComponent.java:37
+msgctxt "Caption"
+msgid "User roles"
+msgstr "Felhasználói jogosultságok"
+
+#: hu/lanoga/toolbox/user/User.java:109
+msgctxt "Notification"
+msgid ""
+"Note: after save here, the selected/target user needs a logout/login cycle "
+"for his/hers new/changed roles to take affect!"
+msgstr ""
+"Megjegyzés: mentés után a kiválasztott felhasználónak ki és be kell "
+"jelentkeznie, hogy a változások érvényesüljenek!"
+
+#: hu/lanoga/toolbox/user/User.java:125
+msgid "Username"
+msgstr "Felhasználónév"
+
+#: hu/lanoga/toolbox/user/User.java:128
+msgid "Other notes"
+msgstr "Egyéb jegyzetek"
+
+#: hu/lanoga/toolbox/user/User.java:148
+msgid "First name"
+msgstr "Keresztnév"
+
+#: hu/lanoga/toolbox/user/User.java:153
+msgid "Last name"
+msgstr "Vezetéknév"
+
+#: hu/lanoga/toolbox/user/User.java:175
+msgid "Phone number"
+msgstr "Telefonszám"
+
+#: hu/lanoga/toolbox/user/UserController.java:63
+msgctxt "Error"
+msgid ""
+"Password is too simple (min length: 8 character, necessary: lowercase, "
+"uppercase, number)!"
+msgstr ""
+"A jelszó túl gyenge! Szükséges: minimum 8 karakter, legalább egy kis- és "
+"nagybetű, és legalább egy szám!"
+
+#: hu/lanoga/toolbox/user/UserController.java:66
+msgctxt "Error"
+msgid "New password values are not equal!"
+msgstr "A két jelszó nem egyezik!"
+
+#: hu/lanoga/toolbox/user/UserController.java:69
+msgctxt "Error"
+msgid "Invalid old password!"
+msgstr "Érvénytelen régi jelszó!"
+
+#: hu/lanoga/toolbox/user/UserJdbcRepository.java:89
+msgctxt "Error"
+msgid "Reserved username!"
+msgstr "Foglalt/érvénytelen felhasználónév!"
+
+#: hu/lanoga/toolbox/user/UserKeyValueSettings.java:36
+msgctxt "Caption"
+msgid "Choose user"
+msgstr "Válasszon felhasználót"
+
+#: hu/lanoga/toolbox/vaadin/AbstractToolboxUI.java:262
+msgctxt "Caption"
+msgid "Error"
+msgstr "Hiba"
+
+#: hu/lanoga/toolbox/vaadin/AbstractToolboxUI.java:291
+msgctxt "Caption"
+msgid "Details"
+msgstr "Részletek"
+
+#: hu/lanoga/toolbox/vaadin/AbstractToolboxUI.java:297
+#: hu/lanoga/toolbox/vaadin/component/CodeStoreComponent.java:102
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:904
+msgctxt "Button"
+msgid "Close"
+msgstr "Bezárás"
+
+#: hu/lanoga/toolbox/vaadin/AbstractToolboxUI.java:310
+msgctxt "Caption"
+msgid "An unexpected error has occurred in our system. "
+msgstr "Váratlan hiba történt a rendszerünkben."
+
+#: hu/lanoga/toolbox/vaadin/AbstractToolboxUI.java:314
+msgctxt "Caption"
+msgid ""
+"The administrators/developers have been automatically notified about the "
+"error/bug. "
+msgstr ""
+"Az adminisztrátorok/fejlesztők automatikusan értesítve lettek a hibáról."
+
+#: hu/lanoga/toolbox/vaadin/AbstractToolboxUI.java:382
+msgctxt "Notification"
+msgid "The cookies are disabled"
+msgstr "A sütik (cookies) ki vannak kapcsolva"
+
+#: hu/lanoga/toolbox/vaadin/AbstractToolboxUI.java:383
+msgctxt "Notification"
+msgid "Enable the cookies in your browser then try again."
+msgstr ""
+"Kérjük engedélyezze a sütiket (cookies) a böngészőben és próbálja újra."
+
+#: hu/lanoga/toolbox/vaadin/AbstractToolboxUI.java:385
+msgctxt "Notification"
+msgid "Wrong username or password"
+msgstr "Helytelen felhasználónév vagy jelszó"
+
+#: hu/lanoga/toolbox/vaadin/AbstractToolboxUI.java:386
+msgctxt "Notification"
+msgid "Login failed, please try again."
+msgstr "A bejelentkezés nem sikerült, kérjük próbálja újra."
+
+#: hu/lanoga/toolbox/vaadin/AbstractToolboxUI.java:388
+msgctxt "Notification"
+msgid "Communication error"
+msgstr "Kommunikációs hiba"
+
+#: hu/lanoga/toolbox/vaadin/AbstractToolboxUI.java:389
+msgctxt "Notification"
+msgid ""
+"The connection with the server has been terminated. Reconnection is in "
+"progress."
+msgstr "A szerverrel a kapcsolat megszakadt, újra csatlakozás folyamatban."
+
+#: hu/lanoga/toolbox/vaadin/AbstractToolboxUI.java:391
+msgctxt "Notification"
+msgid "Session expired"
+msgstr "A munkamenet lejárt"
+
+#: hu/lanoga/toolbox/vaadin/AbstractToolboxUI.java:392
+#, fuzzy
+msgctxt "Notification"
+msgid ""
+"Take note of any unsaved data, and <u>click here</u> or press ESC to "
+"continue."
+msgstr ""
+"Jegyezzen fel minden le nem lementett adatot és <u>kattintson ide</u> vagy "
+"nyomja meg az ESC gombot, hogy folytassa."
+
+#: hu/lanoga/toolbox/vaadin/AbstractToolboxUI.java:394
+msgctxt "Notification"
+msgid "Internal error"
+msgstr "Belső hiba"
+
+#: hu/lanoga/toolbox/vaadin/AbstractToolboxUI.java:395
+msgctxt "Notification"
+msgid ""
+"Please notify the administrator.<br/>Take note of any unsaved data, and "
+"<u>click here</u> or press ESC to continue."
+msgstr ""
+"Kérjük értesítse az adminisztrátort, majd próbálja meg frissíteni az oldalt."
+
+#: hu/lanoga/toolbox/vaadin/AbstractToolboxUI.java:511
+msgctxt "Caption"
+msgid ""
+"The system will be updated/restarted in 1-2 minutes. Please save your work, "
+"and continue after the restart (~10 min)! Sorry for the inconvinience."
+msgstr ""
+"A rendszer pár percen belül frissítésre kerül, kérem fejezze be a munkát és "
+"térjen vissza később. Elnézést kérjük a kényelmetlenség miatt!"
+
+#: hu/lanoga/toolbox/vaadin/ForgottenPasswordUI.java:56
+msgctxt "Title"
+msgid "Forgotten password"
+msgstr "Elfelejtett jelszó"
+
+#: hu/lanoga/toolbox/vaadin/ForgottenPasswordUI.java:94
+msgctxt "Caption"
+msgid "Reset password"
+msgstr "Jelszó alaphelyzetbe állítása"
+
+#: hu/lanoga/toolbox/vaadin/ForgottenPasswordUI.java:101
+#: hu/lanoga/toolbox/vaadin/ForgottenPasswordUI.java:113
+msgctxt "Notification"
+msgid "Wrong email!"
+msgstr "Helytelen email!"
+
+#: hu/lanoga/toolbox/vaadin/ForgottenPasswordUI.java:133
+msgctxt "Notification"
+msgid "Please check your inbox!"
+msgstr "Kérem ellenőrizze e-mail fiókját!"
+
+#: hu/lanoga/toolbox/vaadin/ResetPasswordUI.java:79
+msgctxt "Button"
+msgid "New password"
+msgstr "Új jelszó"
+
+#: hu/lanoga/toolbox/vaadin/ResetPasswordUI.java:80
+msgctxt "Button"
+msgid "New password again"
+msgstr "Új jelszó ismét"
+
+#: hu/lanoga/toolbox/vaadin/ResetPasswordUI.java:82
+#: hu/lanoga/toolbox/vaadin/component/QuickContactComponent.java:92
+#: hu/lanoga/toolbox/vaadin/component/UserComponent.java:175
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:256
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:267
+msgctxt "Button"
+msgid "Save"
+msgstr "Mentés"
+
+#: hu/lanoga/toolbox/vaadin/ResetPasswordUI.java:114
+msgctxt "Notification"
+msgid "The token has expired!"
+msgstr "A token lejárt!"
+
+#: hu/lanoga/toolbox/vaadin/ResetPasswordUI.java:118
+msgctxt "Notification"
+msgid "The passwords do not match!"
+msgstr "A jelszavak nem egyeznek!"
+
+#: hu/lanoga/toolbox/vaadin/ResetPasswordUI.java:122
+msgctxt "Notification"
+msgid "The password is too weak!"
+msgstr "A jelszó túl gyenge!"
+
+#: hu/lanoga/toolbox/vaadin/ResetPasswordUI.java:137
+msgctxt "Notification"
+msgid "Password was changed!"
+msgstr "A jelszó megváltozott!"
+
+#: hu/lanoga/toolbox/vaadin/binder/AutoBinder.java:126
+msgctxt "ValidationError"
+msgid "Not a number!"
+msgstr "Nem szám!"
+
+#: hu/lanoga/toolbox/vaadin/binder/ConverterRegistry.java:38
+#: hu/lanoga/toolbox/vaadin/binder/ConverterRegistry.java:43
+msgctxt "Notification"
+msgid "Must be a number"
+msgstr "Számnak kell lennie"
+
+#: hu/lanoga/toolbox/vaadin/binder/ConverterRegistry.java:50
+msgctxt "Notification"
+msgid "Conversion failed"
+msgstr "Átalakítás nem sikerült"
+
+#: hu/lanoga/toolbox/vaadin/binder/ConverterRegistry.java:52
+msgctxt "Notification"
+msgid "Must be one character"
+msgstr "Pontosan egy karakternek kell lennie"
+
+#: hu/lanoga/toolbox/vaadin/component/CodeStoreComponent.java:57
+#, fuzzy
+msgctxt "Button"
+msgid "Items"
+msgstr "Elemek"
+
+#: hu/lanoga/toolbox/vaadin/component/CodeStoreComponent.java:62
+msgctxt "Caption"
+msgid "Items for"
+msgstr "Elemek megtekintés a következőhöz"
+
+#: hu/lanoga/toolbox/vaadin/component/ComboDetailedField.java:150
+msgctxt "Button"
+msgid "Select one"
+msgstr "Válasszon egyet"
+
+#: hu/lanoga/toolbox/vaadin/component/ComboDetailedField.java:165
+#: hu/lanoga/toolbox/vaadin/component/LangEditField.java:323
+#: hu/lanoga/toolbox/vaadin/component/codemirror/CodeMirrorField.java:76
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridField.java:119
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridPageControlComponent.java:106
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridSelectField.java:110
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridSelectJsonField.java:122
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerField.java:130
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerSelectField.java:144
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerSelectMultiTabField.java:160
+#: hu/lanoga/toolbox/vaadin/component/markdown/MarkdownField.java:49
+msgctxt "Button"
+msgid "OK"
+msgstr "OK"
+
+#: hu/lanoga/toolbox/vaadin/component/ComboDetailedField.java:196
+msgctxt "Notification"
+msgid "Please select one first"
+msgstr "Kérjük válasszon ki egyet először"
+
+#: hu/lanoga/toolbox/vaadin/component/CopyToClipboardButtonTextField.java:14
+msgctxt "Button"
+msgid "Copy to clipboard!"
+msgstr "Másolás vágólapra!"
+
+#: hu/lanoga/toolbox/vaadin/component/CopyToClipboardButtonTextField.java:19
+msgctxt "Button"
+msgid "Copied to clipboard!"
+msgstr "Vágólapra másolva!"
+
+#: hu/lanoga/toolbox/vaadin/component/DatePickerField.java:107
+msgctxt "Caption"
+msgid "year"
+msgstr "év"
+
+#: hu/lanoga/toolbox/vaadin/component/DatePickerField.java:111
+msgctxt "Caption"
+msgid "month"
+msgstr "hónap"
+
+#: hu/lanoga/toolbox/vaadin/component/DatePickerField.java:115
+msgctxt "Caption"
+msgid "day"
+msgstr "nap"
+
+#: hu/lanoga/toolbox/vaadin/component/JumpUrlButtonTextField.java:36
+msgctxt "Button"
+msgid "Jump to record URL!"
+msgstr "Ugrás a rekord URL-re!"
+
+#: hu/lanoga/toolbox/vaadin/component/JumpUrlCopyToClipboardButtonTextField.java:37
+msgctxt "Button"
+msgid "Copy jump URL to clipboard!"
+msgstr "Ugró link másolása vágólapra!"
+
+#: hu/lanoga/toolbox/vaadin/component/JumpUrlCopyToClipboardButtonTextField.java:49
+msgctxt "Button"
+msgid "Jump URL copied to clipboard!"
+msgstr "Ugró link másolva a vágólapra!"
+
+#: hu/lanoga/toolbox/vaadin/component/LangEditField.java:106
+msgctxt "Button"
+msgid "Edit language field"
+msgstr "Nyelvi mező szerkesztése"
+
+#: hu/lanoga/toolbox/vaadin/component/LangEditField.java:117
+msgctxt "Button"
+msgid "View language field"
+msgstr "Nyelvi mező megtekintése"
+
+#: hu/lanoga/toolbox/vaadin/component/LangEditField.java:157
+#: hu/lanoga/toolbox/vaadin/component/codemirror/CodeMirrorField.java:96
+msgctxt "Title"
+msgid "Edit language field"
+msgstr "Nyelvi mező szerkesztése"
+
+#: hu/lanoga/toolbox/vaadin/component/LangEditField.java:159
+#: hu/lanoga/toolbox/vaadin/component/codemirror/CodeMirrorField.java:98
+msgctxt "Title"
+msgid "View language field"
+msgstr "Nyelvi mező megtekintése"
+
+#: hu/lanoga/toolbox/vaadin/component/LangEditField.java:313
+msgctxt "Button"
+msgid "Add new language"
+msgstr "Új nyelv hozzáadása"
+
+#: hu/lanoga/toolbox/vaadin/component/LangEditField.java:413
+#: hu/lanoga/toolbox/vaadin/component/LangEditField.java:418
+msgctxt "Notification"
+msgid "Cannot be empty"
+msgstr "Nem lehet üres"
+
+#: hu/lanoga/toolbox/vaadin/component/LangEditField.java:423
+msgctxt "Notification"
+msgid "The field exceeds the maximum character count"
+msgstr "A mező értéke meghaladja a maximális karakterszámot"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:100
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:79
+#: hu/lanoga/toolbox/vaadin/superadmin/SuperAdminUI.java:112
+msgctxt "Caption"
+msgid "Basic data"
+msgstr "Alapadatok"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:101
+msgctxt "Caption"
+msgid "Change password"
+msgstr "Jelszó változtatása"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:111
+msgctxt "Caption"
+msgid "Preferences"
+msgstr "Preferenciák"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:115
+msgctxt "Caption"
+msgid "Two factor authentication"
+msgstr "Kétlépcsős azonosítás"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:126
+msgctxt "Caption"
+msgid "Username (cannot be modified)"
+msgstr "Felhasználónév (nem lehet módosítani)"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:136
+msgctxt "Caption"
+msgid "Family name"
+msgstr "Vezetéknév"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:152
+msgctxt "Button"
+msgid "Save profile data"
+msgstr "Profil adatok mentése"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:167
+msgctxt "Notification"
+msgid "The changes has been successfully saved!"
+msgstr "A változtatások sikeresen elmentve!"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:174
+msgctxt "Notification"
+msgid "Validation failed! Please check and correct the fields!"
+msgstr "Kérjük ellenőrizze és javítsa ki a mezőket!"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:181
+msgctxt "Caption"
+msgid "User roles (only admin can modify in admin settings)"
+msgstr "Jogosultságok (csak admin módosíthatja ezeket)"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:209
+#: hu/lanoga/toolbox/vaadin/component/UserComponent.java:141
+msgctxt "Caption"
+msgid ""
+"Required: min. 8 character, at least one lowercase character, one uppercase "
+"character and one number."
+msgstr ""
+"A jelszó túl gyenge! Szükséges: minimum 8 karakter, legalább egy kis- és "
+"nagybetű, és legalább egy szám."
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:212
+msgctxt "Caption"
+msgid "Old password"
+msgstr "Régi jelszó"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:216
+#: hu/lanoga/toolbox/vaadin/component/UserComponent.java:147
+msgctxt "Caption"
+msgid "New password"
+msgstr "Új jelszó"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:220
+msgctxt "Caption"
+msgid "New password again"
+msgstr "Új jelszó ismét"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:224
+msgctxt "Button"
+msgid "Save password"
+msgstr "Jelszó mentése"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:235
+msgctxt "Notification"
+msgid "Old password is invalid!"
+msgstr "A régi jelszó érvénytelen!"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:251
+msgctxt "Notification"
+msgid "The password has been modified."
+msgstr "A jelszó sikeresen módosítva."
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:258
+msgctxt "Notification"
+msgid ""
+"The password is too weak! Required: min. 8 character, at least one lowercase "
+"character, one uppercase character and one number"
+msgstr ""
+"A jelszó túl gyenge! Szükséges: minimum 8 karakter, legalább egy kis- és "
+"nagybetű, és legalább egy szám"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:262
+msgctxt "Notification"
+msgid "The two password values do not match!"
+msgstr "A két jelszó nem egyezik!"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:266
+msgctxt "Notification"
+msgid "Please fill out the missing fields!"
+msgstr "Kérjük töltse ki a hiányzó mezőket!"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:335
+msgctxt "Caption"
+msgid "Locale (empty = automatic detection)"
+msgstr "Nyelv (üres = automatikus észlelés)"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:428
+msgctxt "Caption"
+msgid "Measurement system (empty = use default)"
+msgstr "Mértékegységrendszer (üres = alapértelmezett)"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:462
+msgctxt "Caption"
+msgid "Theme (empty = default)"
+msgstr "Téma (üres = alapértelmezett)"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:486
+msgctxt "Button"
+msgid "Save preferences"
+msgstr "Preferenciák mentése"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:594
+msgctxt "Caption"
+msgid "What would you like to do?"
+msgstr "Mit szeretne tenni?"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:599
+msgctxt "Caption"
+msgid "Enable two factor authentication"
+msgstr "Kétlépcsős azonosítás engedélyezése"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:600
+msgctxt "Caption"
+msgid "Disable two factor authentication"
+msgstr "Kétlépcsős azonosítás kikapcsolása"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:662
+msgctxt "Notification"
+msgid "Two factor auth. has been disabled!"
+msgstr "Kétlépcsős azonosítás ki lett kapcsolva!"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:688
+msgctxt "Caption"
+msgid "Finish action"
+msgstr "Művelet befejezése"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:709
+msgctxt "Notification"
+msgid "Could not generate QR code (system error)!"
+msgstr "Nem sikerült QR kódot létrehozni (rendszer hiba)!"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:731
+msgctxt "Caption"
+msgid "Please scan the QR Code or Enter the key manually into your app"
+msgstr ""
+"Kérjük szkennelje be a QR kódot vagy gépelje be manuálisan a megerősítő "
+"kódot az alkalmazásba"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:733
+msgctxt "Caption"
+msgid "To finish the process please type in the generated code first"
+msgstr "A folyamat befejezéséhez kérjük gépelje be a generált megerősítő kódot"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:737
+msgctxt "Caption"
+msgid "Code"
+msgstr "Megerősítő kód"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:743
+msgctxt "Button"
+msgid "Verify"
+msgstr "Megerősítés"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:758
+msgctxt "Notification"
+msgid "Correct"
+msgstr "Helyes"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:762
+msgctxt "Notification"
+msgid "Incorrect"
+msgstr "Helytelen"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:787
+msgctxt "Notification"
+msgid "Please verify first!"
+msgstr "Kérjük erősítse meg először!"
+
+#: hu/lanoga/toolbox/vaadin/component/MyProfileComponent.java:795
+msgctxt "Notification"
+msgid "Two factor auth. has been enabled!"
+msgstr "Kétlépcsős azonosítás engedélyezve lett!"
+
+#: hu/lanoga/toolbox/vaadin/component/QuickContactComponent.java:63
+msgctxt "Caption"
+msgid "Notification settings"
+msgstr "Értesítési beállítások"
+
+#: hu/lanoga/toolbox/vaadin/component/QuickContactComponent.java:68
+msgctxt "Caption"
+msgid "Notification settings (receivers)"
+msgstr "Értesítési beállítások (fogadók)"
+
+#: hu/lanoga/toolbox/vaadin/component/RoleTemporaryOverrideComponent.java:45
+msgctxt "Caption"
+msgid "Username (the allower / admin)"
+msgstr "Felhasználónév (engedélyező / admin)"
+
+#: hu/lanoga/toolbox/vaadin/component/RoleTemporaryOverrideComponent.java:49
+msgctxt "Caption"
+msgid "Password (of the allower)"
+msgstr "Jelszó (az engedélyezőé)"
+
+#: hu/lanoga/toolbox/vaadin/component/RoleTemporaryOverrideComponent.java:53
+msgctxt "Button"
+msgid "OK (temporarly grant/add roles to current user)"
+msgstr ""
+"OK (ideiglenesen engedélyez/hozzá ad jogosultságokat a jelenlegi "
+"felhasználónak)"
+
+#: hu/lanoga/toolbox/vaadin/component/RoleTemporaryOverrideComponent.java:63
+msgctxt "Error"
+msgid "Missing or invalid values!"
+msgstr "Hiányzó vagy hibás értékek!"
+
+#: hu/lanoga/toolbox/vaadin/component/RoleTemporaryOverrideComponent.java:88
+msgctxt "Error"
+msgid "User does not exist or not admin!"
+msgstr "Felhasználó nem létezik vagy nem admin!"
+
+#: hu/lanoga/toolbox/vaadin/component/RoleTemporaryOverrideComponent.java:96
+msgctxt "Caption"
+msgid "User roles (current temp. state)"
+msgstr "Jogosultságok (jelenlegi ideiglenes állapotban)"
+
+#: hu/lanoga/toolbox/vaadin/component/RoleTemporaryOverrideComponent.java:99
+msgctxt "Button"
+msgid "Revoke (every temporarly granted role)"
+msgstr "Megvonás (minden ideiglenesen adott jogra)"
+
+#: hu/lanoga/toolbox/vaadin/component/TenantOverseerComponent.java:59
+msgctxt "Notification"
+msgid "You don't have avatars in any other company!"
+msgstr "Nincsen avatarja másik cégnél!"
+
+#: hu/lanoga/toolbox/vaadin/component/TenantOverseerComponent.java:68
+msgctxt "Caption"
+msgid "Choose company (and user)"
+msgstr "Válassz tartományt (és felhasználót)"
+
+#: hu/lanoga/toolbox/vaadin/component/TenantOverseerComponent.java:76
+msgctxt "Button"
+msgid "Switch to the selected company"
+msgstr "Átváltás a kiválasztott cégre"
+
+#: hu/lanoga/toolbox/vaadin/component/UrlButtonTextField.java:13
+msgctxt "Button"
+msgid "Jump to URL!"
+msgstr "Ugrás az URL-re!"
+
+#: hu/lanoga/toolbox/vaadin/component/UserComponent.java:126
+msgctxt "Button"
+msgid "Change password"
+msgstr "Jelszó változtatása"
+
+#: hu/lanoga/toolbox/vaadin/component/UserComponent.java:132
+msgctxt "Caption"
+msgid "Change password for selected user"
+msgstr "Jelszó változtatása a kiválasztott felhasználó számára"
+
+#: hu/lanoga/toolbox/vaadin/component/UserComponent.java:153
+msgctxt "Button"
+msgid "Generate"
+msgstr "Generálás"
+
+#: hu/lanoga/toolbox/vaadin/component/UserComponent.java:183
+#: hu/lanoga/toolbox/vaadin/component/UserComponent.java:204
+msgctxt "Error"
+msgid "Password is too weak"
+msgstr "A jelszó túl gyenge"
+
+#: hu/lanoga/toolbox/vaadin/component/UserComponent.java:196
+#: hu/lanoga/toolbox/vaadin/component/UserComponent.java:198
+msgctxt "Button"
+msgid "Save and copy to clipboard"
+msgstr "Mentés és másolás vágólapra"
+
+#: hu/lanoga/toolbox/vaadin/component/UserComponent.java:210
+msgctxt "Button"
+msgid "Password copied to clipboard!"
+msgstr "Jelszó másolva a vágólapra!"
+
+#: hu/lanoga/toolbox/vaadin/component/codemirror/CodeMirrorField.java:121
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridField.java:49
+#: hu/lanoga/toolbox/vaadin/component/markdown/MarkdownField.java:93
+msgctxt "Button"
+msgid "Edit field"
+msgstr "Mező szerkesztése"
+
+#: hu/lanoga/toolbox/vaadin/component/codemirror/CodeMirrorField.java:130
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridField.java:58
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridSelectField.java:56
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridSelectJsonField.java:54
+#: hu/lanoga/toolbox/vaadin/component/markdown/MarkdownField.java:102
+msgctxt "Button"
+msgid "View field"
+msgstr "Mező megtekintése"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:502
+msgctxt "Tooltip"
+msgid "Add"
+msgstr "Hozzáadás"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:503
+msgctxt "Tooltip"
+msgid "Modify"
+msgstr "Módosítás"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:504
+msgctxt "Tooltip"
+msgid "Delete"
+msgstr "Törlés"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:505
+msgctxt "Tooltip"
+msgid "View details"
+msgstr "Részletek megnézése"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:506
+msgctxt "Tooltip"
+msgid "Clear selection"
+msgstr "Kijelölés megszűntetése"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:507
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:866
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:869
+msgctxt "Tooltip"
+msgid "Clear filters"
+msgstr "Szűrők törlése"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:508
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:843
+msgctxt "Tooltip"
+msgid "Refresh"
+msgstr "Frissítés"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:509
+msgctxt "Tooltip"
+msgid "Export"
+msgstr "Exportálás"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:617
+msgctxt "Caption"
+msgid "yes"
+msgstr "igen"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:618
+msgctxt "Caption"
+msgid "no"
+msgstr "nem"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:619
+msgctxt "Caption"
+msgid "?"
+msgstr "?"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:701
+msgctxt "Tooltip"
+msgid "Filter"
+msgstr "Szűrő"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:866
+msgctxt "Tooltip"
+msgid "currently active filters"
+msgstr "jelenleg aktív szűrők"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:877
+msgctxt "Title"
+msgid "Export"
+msgstr "Exportálás"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:877
+msgctxt "Title"
+msgid "Export (async)"
+msgstr "Exportálás (async)"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:892
+msgctxt "Caption"
+msgid "Export type"
+msgstr "Exportálás típusa"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:898
+msgctxt "Button"
+msgid "Export!"
+msgstr "Exportálás!"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:955
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridPageControlComponent.java:125
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:113
+msgctxt "Button"
+msgid "Cancel"
+msgstr "Mégse"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:1038
+msgctxt "Notification"
+msgid "Timeout!"
+msgstr "Időtúllépés"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:1085
+msgctxt "Notification"
+msgid "Export amount limit violation"
+msgstr "export limit túllépve"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:1086
+msgctxt "Notification"
+msgid "limit"
+msgstr "limit"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:1087
+msgctxt "Notification"
+msgid "actual"
+msgstr "aktuális"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:1435
+msgctxt "Caption"
+msgid "Add"
+msgstr "Hozzáadás"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:1438
+msgctxt "Caption"
+msgid "Edit"
+msgstr "Szerkesztés"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:1441
+msgctxt "Caption"
+msgid "Delete it?"
+msgstr "Szeretné törölni?"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:1444
+msgctxt "Caption"
+msgid "View"
+msgstr "Megtekintés"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:1655
+msgctxt "Notification"
+msgid "Elements"
+msgstr "Elemek"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:1701
+msgctxt "Tooltip"
+msgid "Refresh (new or modified records!)"
+msgstr "Frissítés (új vagy módosított rekordok!)"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridComponent.java:1754
+msgctxt "Caption"
+msgid "A record has been created or modified, please refresh the grid!"
+msgstr ""
+"Egy rekord létre lett hozva, vagy módosítva lett. Kérjük frissítse a "
+"táblázatot!"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridField.java:81
+msgctxt "Title"
+msgid "Edit materials"
+msgstr "Anyagok szerkesztése"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridField.java:83
+msgctxt "Title"
+msgid "View materials"
+msgstr "Anyagok megtekintése"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridPageControlComponent.java:197
+msgctxt "Notification"
+msgid "Please choose between 1 and"
+msgstr "Kérjük válasszon ezek között: 1 és "
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridSelectField.java:28
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridSelectJsonField.java:26
+msgctxt "Button"
+msgid "Edit field (selection)"
+msgstr "Mező szerkesztése (kiválasztás)"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridSelectField.java:79
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridSelectJsonField.java:77
+msgctxt "Title"
+msgid "Select elements"
+msgstr "Elemek kijelölése"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridSelectField.java:81
+#: hu/lanoga/toolbox/vaadin/component/crud/CrudGridSelectJsonField.java:79
+msgctxt "Title"
+msgid "View selection"
+msgstr "Kijelölés megtekintése"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/HeaderRowSearchComponent.java:154
+#: hu/lanoga/toolbox/vaadin/component/crud/HeaderRowSearchComponent.java:162
+msgctxt "Caption"
+msgid "Filter"
+msgstr "Szűrő"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/HeaderRowSearchComponent.java:199
+#: hu/lanoga/toolbox/vaadin/component/crud/HeaderRowSearchComponent.java:215
+#: hu/lanoga/toolbox/vaadin/component/crud/HeaderRowSearchComponent.java:231
+msgctxt "Placeholder"
+msgid "Filter"
+msgstr "Szűrő"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/HeaderRowSearchComponent.java:262
+#: hu/lanoga/toolbox/vaadin/component/crud/HeaderRowSearchComponent.java:266
+#: hu/lanoga/toolbox/vaadin/component/crud/HeaderRowSearchComponent.java:279
+#: hu/lanoga/toolbox/vaadin/component/crud/HeaderRowSearchComponent.java:283
+msgctxt "Placeholder"
+msgid "Filter value"
+msgstr "Szűrő értéke"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/MultiFormLayoutCrudFormComponent.java:131
+msgctxt "Tab"
+msgid "Basic data"
+msgstr "Alapadatok"
+
+#: hu/lanoga/toolbox/vaadin/component/crud/MultiFormLayoutCrudFormComponent.java:133
+msgctxt "Tab"
+msgid "Additional data"
+msgstr "További adatok"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileCarouselComponent.java:85
+msgctxt "Button"
+msgid "See original size"
+msgstr "Eredeti méret megtekintése"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileCarouselComponent.java:86
+msgctxt "Button"
+msgid "File info"
+msgstr "Fájl információ"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileCarouselComponent.java:89
+msgctxt "Button"
+msgid "Download"
+msgstr "Letöltés"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileCarouselComponent.java:93
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:857
+msgctxt "Button"
+msgid "Add to file cart"
+msgstr "Hozzáadás a fájl kosárhoz"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileCarouselComponent.java:145
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:447
+msgctxt "Caption"
+msgid "File info"
+msgstr "Fájl információ"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileCarouselComponent.java:158
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:863
+msgctxt "Notification"
+msgid "File(s) successfully added to cart."
+msgstr "Fájl(ok) hozzáadva a kosárhoz."
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileCartComponent.java:60
+#, fuzzy
+msgctxt "Caption"
+msgid ""
+"Information about this component: <br>You can use the file cart to gather "
+"various files from the system, group them together, <br>and use them for "
+"email attachments, exports, reports, etc."
+msgstr ""
+"Információ erről a komponensről: <br>Használhatja a fájl kosarat ahhoz, hogy "
+"összegyűjtsön különböző fájlokat a rendszerből,<br> csoportosítsa őket, és "
+"használja fel őket<br> exportálásra, riport generáláshoz, email "
+"csatolmányként stb."
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileCartComponent.java:69
+msgctxt "Caption"
+msgid "File cart is empty!"
+msgstr "Fájl kosár üres!"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileCartComponent.java:86
+msgctxt "Caption"
+msgid "Currently in the file cart"
+msgstr "Jelenleg a fájl kosárban"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileCartComponent.java:95
+msgctxt "Button"
+msgid "Remove selected file(s) from cart"
+msgstr "Kiválasztott fájl(ok) eltávolítása a fájl kosárból"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileCartComponent.java:96
+msgctxt "Caption"
+msgid ""
+"Removes the file(s) from the cart (note: the files will be removed only from "
+"the cart)"
+msgstr ""
+"Eltávolítja a fájl(ok)at a kosárból (megjegyzés: a fájlok csak a kosárból "
+"lesznek eltávolítva)"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileCartComponent.java:102
+#: hu/lanoga/toolbox/vaadin/component/file/FileCartComponent.java:138
+msgctxt "Notification"
+msgid "The cart is empty"
+msgstr "A kosár üres"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileCartComponent.java:117
+msgctxt "Notification"
+msgid "No file(s) selected"
+msgstr "Nincs fájl kiválasztva"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileCartComponent.java:128
+msgctxt "Button"
+msgid "Empty cart"
+msgstr "Kosár ürítése"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileCartComponent.java:129
+msgctxt "Caption"
+msgid ""
+"Removes all files from the cart (note: the files will be removed only from "
+"the cart)"
+msgstr ""
+"Eltávolítja a fájl(ok)at a kosárból (megjegyzés: a fájlok csak a kosárból "
+"lesznek eltávolítva)"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:145
+msgctxt "Caption"
+msgid "template document"
+msgstr "sablon dokumentum"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:152
+msgctxt "Caption"
+msgid "new"
+msgstr "új"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:231
+#, fuzzy
+msgctxt "Caption"
+msgid "File carousel"
+msgstr "Képnézegető"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:277
+msgctxt "Tooltip"
+msgid "This file cannot be displayed in the file carousel dialog."
+msgstr "Ez a fájl nem megjeleníthető a képnézegetőben."
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:354
+msgctxt "Caption"
+msgid "Confirm"
+msgstr "Megerősítés"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:355
+msgctxt "Caption"
+msgid "Would you like to delete this file?"
+msgstr "Biztosan szeretné törölni ezt a fájlt?"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:356
+msgctxt "Button"
+msgid "Confirm"
+msgstr "Megerősítés"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:356
+msgctxt "Button"
+msgid "Deny"
+msgstr "Elutasítás"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:406
+msgctxt "Tooltip"
+msgid "me"
+msgstr "én"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:408
+#, fuzzy
+msgctxt "Tooltip"
+msgid "Try to unlock"
+msgstr "Zárolás feloldása"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:408
+msgctxt "Tooltip"
+msgid "currently locked by"
+msgstr "jelenleg zárolta"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:424
+msgctxt "Tooltip"
+msgid "Make locked (currently not locked)"
+msgstr "Lezárás (jelenleg nincs lezárva)"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:475
+msgctxt "Caption"
+msgid "(optional pretty name)"
+msgstr "(opcionális szép név)"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:476
+msgctxt "Tooltip"
+msgid ""
+"Optional pretty name that will be used in exports, email attachments etc."
+msgstr ""
+"Opcionális szép név (felhasználva az exportálásokhoz, email csatolmányokhoz "
+"stb.)"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:749
+msgctxt "Caption"
+msgid "max. file count"
+msgstr "max. fájl szám"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:759
+msgctxt "Prompt"
+msgid "Search filename"
+msgstr "Fájlnév keresése"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:807
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:975
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:981
+msgctxt "Button"
+msgid "Upload"
+msgstr "Feltöltés"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:846
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:909
+msgctxt "Button"
+msgid "Download as ZIP"
+msgstr "Letöltés ZIP-ként"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:858
+msgctxt "Tooltip"
+msgid "Add selected files to file cart"
+msgstr "Kiválasztott fájlok hozzáadása a fájl kosárhoz"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:870
+msgctxt "Button"
+msgid "View file cart"
+msgstr "Fájl kosár megtekintése"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:871
+#, fuzzy
+msgctxt "Tooltip"
+msgid "View the added files to file cart"
+msgstr "Hozzáadott fájlok megtekintése a fájl kosárban"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:873
+msgctxt "Caption"
+msgid "View files"
+msgstr "Fájlok megtekintése"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:885
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:920
+msgctxt "Tooltip"
+msgid "Select all"
+msgstr "Összes kiválasztása"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:893
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:928
+msgctxt "Tooltip"
+msgid "Deselect all"
+msgstr "Összes kiválasztás megszüntetése"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:975
+msgctxt "Caption"
+msgid "full"
+msgstr "teljes"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerComponent.java:1104
+msgctxt "Notification"
+msgid "The file was not added, because it's filename was a duplicate"
+msgstr "A fájl nem lett hozzáadva, mert a fájlnév már létezik"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerField.java:55
+msgctxt "Button"
+msgid "Manage"
+msgstr "Kezelés"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerField.java:67
+msgctxt "Button"
+msgid "View"
+msgstr "Megtekintés"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerField.java:90
+msgctxt "Title"
+msgid "Manage files"
+msgstr "Fájlok kezelése"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerField.java:92
+msgctxt "Title"
+msgid "View files"
+msgstr "Fájlok megtekintése"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerMeta3SeparatedField.java:187
+msgctxt "Caption"
+msgid "not categorized"
+msgstr "nem kategorizált"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerSelectField.java:71
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerSelectMultiTabField.java:78
+msgctxt "Button"
+msgid "Select files"
+msgstr "Fájlok kiválasztása"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerSelectField.java:83
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerSelectMultiTabField.java:90
+msgctxt "Button"
+msgid "View file selection"
+msgstr "Fájl kiválasztás megtekintése"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerSelectField.java:102
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerSelectMultiTabField.java:109
+msgctxt "Title"
+msgid "Select files"
+msgstr "Fájlok kiválasztása"
+
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerSelectField.java:104
+#: hu/lanoga/toolbox/vaadin/component/file/FileManagerSelectMultiTabField.java:111
+msgctxt "Title"
+msgid "View selected files"
+msgstr "Kiválasztott fájlok megtekintése"
+
+#: hu/lanoga/toolbox/vaadin/component/file/SimpleFileUploadField.java:107
+msgctxt "Button"
+msgid "New file"
+msgstr "Új fájl"
+
+#: hu/lanoga/toolbox/vaadin/component/file/SimpleFileUploadField.java:132
+msgctxt "Caption"
+msgid "Upload file"
+msgstr "Fájl feltöltése"
+
+#: hu/lanoga/toolbox/vaadin/component/file/SimpleFileUploadField.java:165
+msgctxt "Caption"
+msgid "Select file"
+msgstr "Fájl kiválasztása"
+
+#: hu/lanoga/toolbox/vaadin/component/file/SimpleFileUploadField.java:173
+msgctxt "Notification"
+msgid "File is too big!"
+msgstr "A fájl túl nagy méretű!"
+
+#: hu/lanoga/toolbox/vaadin/component/file/SimpleFileUploadField.java:182
+msgctxt "Notification"
+msgid "Upload finished"
+msgstr "A feltöltés befejeződött"
+
+#: hu/lanoga/toolbox/vaadin/component/markdown/MarkdownComponent.java:28
+msgctxt "Caption"
+msgid "Editor"
+msgstr "Szerkesztő"
+
+#: hu/lanoga/toolbox/vaadin/component/markdown/MarkdownComponent.java:33
+msgctxt "Caption"
+msgid "Preview"
+msgstr "Előnézet"
+
+#: hu/lanoga/toolbox/vaadin/component/markdown/MarkdownField.java:68
+msgctxt "Title"
+msgid "Edit field"
+msgstr "Mező szerkesztése"
+
+#: hu/lanoga/toolbox/vaadin/component/markdown/MarkdownField.java:70
+msgctxt "Title"
+msgid "View field"
+msgstr "Mező megtekintése"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentCustomerEndComponent.java:99
+msgctxt "Caption"
+msgid "Please wait..."
+msgstr "Kérjük várjon..."
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentCustomerEndComponent.java:208
+msgctxt "Caption"
+msgid "Payment transaction"
+msgstr "Fizetési tranzakció"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentCustomerEndComponent.java:210
+msgctxt "Label"
+msgid "error/timeout"
+msgstr "hiba/időtúllépés"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentCustomerStartComponent.java:201
+msgctxt "Caption"
+msgid "Order"
+msgstr "Rendelés"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentCustomerStartComponent.java:289
+msgctxt "Label"
+msgid "Customer's email address (mandatory)"
+msgstr "Vásárlói e-mail cím (kötelező)"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentCustomerStartComponent.java:292
+msgctxt "Label"
+msgid "Customer's email (mandat. for some paym. types)"
+msgstr "Vásárlói e-mail cím (kötelező egyes fizetési fajtáknál)"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentCustomerStartComponent.java:623
+msgctxt "Button"
+msgid "Pay (SimplePay)"
+msgstr "Fizetés (SimplePay)"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentCustomerStartComponent.java:728
+msgctxt "Error"
+msgid "Customer email is mandatory!"
+msgstr "Vásárlói e-mail cím kötelező!"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentCustomerStartComponent.java:736
+msgctxt "Error"
+msgid "Customer email is mandatory for SimplePay!"
+msgstr "Vásárlói e-mail cím kötelező a SimplePay-hez!"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentCustomerStartComponent.java:855
+msgctxt "Button"
+msgid "Proceed"
+msgstr "Tovább"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentCustomerStartComponent.java:869
+msgctxt "Label"
+msgid "Successful payment!"
+msgstr "Sikeres fizetés!"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentCustomerStartComponent.java:879
+msgctxt "Label"
+msgid "Failed payment!"
+msgstr "Sikertelen fizetés!"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentCustomerStartComponent.java:889
+msgctxt "Label"
+msgid "Pending or uncertain payment!"
+msgstr "Folyamatban lévő vagy bizonytalan fizetés!"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:80
+msgctxt "Caption"
+msgid "Notes, files"
+msgstr "Jegyzetek, fájlok"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:81
+msgctxt "Caption"
+msgid "Provider specifc"
+msgstr "Szolgáltató specifikus"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:82
+msgctxt "Caption"
+msgid "Others"
+msgstr "Egyebek"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:103
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:113
+msgctxt "Button"
+msgid "Refund"
+msgstr "Visszatérítés (refund)"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:110
+msgctxt "Caption"
+msgid "Confirmation"
+msgstr "Megerősítés"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:112
+msgctxt "Caption"
+msgid "Refund transaction? ("
+msgstr "Tranzakció visszatérítése? ("
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:126
+msgctxt "Notification"
+msgid "Refund successful"
+msgstr "Visszatérítés sikeres"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:136
+msgctxt "Button"
+msgid "See raw log"
+msgstr "Nyers napló/log"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:143
+msgctxt "Title"
+msgid "Payment transaction identifier: #"
+msgstr "Fizetési tranzakció azonosítója: #"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:209
+msgctxt "Caption"
+msgid "Transactions"
+msgstr "Tranzakciók"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:218
+msgctxt "Caption"
+msgid "Payment provider configs"
+msgstr "Fizetési szolgáltató konfigurációi"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:224
+msgctxt "Caption"
+msgid "Payment provider configs (only admin can modify it)"
+msgstr "Fizetési szolgáltató konfigurációi (csak admin módosíthatja)"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:236
+msgctxt "Caption"
+msgid "success"
+msgstr "sikeres"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:237
+msgctxt "Caption"
+msgid "failed"
+msgstr "sikertelen"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:238
+msgctxt "Caption"
+msgid "pending"
+msgstr "függő"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:239
+msgctxt "Caption"
+msgid "preparing"
+msgstr "megkezdett"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:240
+msgctxt "Caption"
+msgid "last 7 days"
+msgstr "utolsó 7 nap"
+
+#: hu/lanoga/toolbox/vaadin/component/payment/PaymentTransactionComponent.java:241
+msgctxt "Caption"
+msgid "no main filter"
+msgstr "nincs főszűrő"
+
+#: hu/lanoga/toolbox/vaadin/superadmin/SuperAdminUI.java:63
+msgctxt "Title"
+msgid "SUPER ADMIN UI"
+msgstr "SUPER ADMIN felület"
+
+#: hu/lanoga/toolbox/vaadin/superadmin/SuperAdminUI.java:100
+msgctxt "Button"
+msgid "Logout"
+msgstr "Kijelentkezés"
+
+#: hu/lanoga/toolbox/vaadin/superadmin/SuperAdminUI.java:113
+msgctxt "Caption"
+msgid "Company details"
+msgstr "Cég adatai"
+
+#: hu/lanoga/toolbox/vaadin/superadmin/SuperAdminUI.java:114
+msgctxt "Caption"
+msgid "Notes, extra"
+msgstr "Jegyzetek, fájlok"
+
+#: hu/lanoga/toolbox/vaadin/superadmin/SuperAdminUI.java:115
+msgctxt "Caption"
+msgid "Additional info"
+msgstr "További adatok"
+
+#: hu/lanoga/toolbox/vaadin/superadmin/SuperAdminUI.java:144
+msgctxt "Caption"
+msgid "Manage tenants"
+msgstr "Tenant-ok kezelése"
+
+#: hu/lanoga/toolbox/vaadin/superadmin/SuperAdminUI.java:151
+msgctxt "Caption"
+msgid "Codestore"
+msgstr "Kódszótár"
+
+#: hu/lanoga/toolbox/vaadin/superadmin/SuperAdminUI.java:158
+msgctxt "Caption"
+msgid "Email sender diagnostics"
+msgstr "E-mail küldés diagnosztika"
+
+#: hu/lanoga/toolbox/vaadin/superadmin/SuperAdminUI.java:165
+msgctxt "Caption"
+msgid "Email templates"
+msgstr "Email sablonok"
+
+#: hu/lanoga/toolbox/vaadin/superadmin/SuperAdminUI.java:171
+msgctxt "Caption"
+msgid "Diagnostics"
+msgstr "Diagnosztika"
+
+#: hu/lanoga/toolbox/vaadin/superadmin/SuperAdminUI.java:221
+msgctxt "Button"
+msgid "LOG"
+msgstr "LOG (szoftver naplózás)"
+
+#: hu/lanoga/toolbox/vaadin/superadmin/SuperAdminUI.java:229
+msgctxt "Button"
+msgid "Health"
+msgstr "Egészség"
+
+#: hu/lanoga/toolbox/vaadin/superadmin/SuperAdminUI.java:237
+msgctxt "Button"
+msgid "Info (version etc.)"
+msgstr "Infó (verzió stb.)"
+
+#: hu/lanoga/toolbox/vaadin/superadmin/SuperAdminUI.java:245
+msgctxt "Button"
+msgid "Metrics"
+msgstr "Mérőszámok"
+
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:263
+msgctxt "Notification"
+msgid "Successful save (add)!"
+msgstr "Sikeres mentés (hozzáadva)"
+
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:274
+msgctxt "Notification"
+msgid "Successful save (update)!"
+msgstr "Sikeres mentés (módosítva)"
+
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:278
+msgctxt "Button"
+msgid "Delete"
+msgstr "Törlés"
+
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:285
+msgctxt "Notification"
+msgid "Successful delete!"
+msgstr "Sikeres törlés!"
+
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:314
+msgctxt "Notification"
+msgid "Invalid/missing data!"
+msgstr "Érvénytelen/hiányzó adatok!"
+
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:711
+msgctxt "Caption"
+msgid "Country code"
+msgstr "Országkód"
+
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:768
+msgctxt "Caption"
+msgid "Language"
+msgstr "Nyelv"
+
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:832
+msgctxt "Caption"
+msgid "User"
+msgstr "Felhasználó"
+
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:850
+msgctxt "Caption"
+msgid "Currency"
+msgstr "Pénznem"
+
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:1053
+msgctxt "Caption"
+msgid "Filename"
+msgstr "Fájlnév"
+
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:1058
+msgctxt "Caption"
+msgid "File size (KiB)"
+msgstr "Fájlméret (KiB)"
+
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:1066
+msgctxt "Caption"
+msgid "Created by"
+msgstr "Rekord készítője"
+
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:1072
+msgctxt "Caption"
+msgid "Created on"
+msgstr "Rekord létrehozva"
+
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:1079
+msgctxt "Caption"
+msgid "Modified by (last)"
+msgstr "Rekord módosítója (legutolsó)"
+
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:1085
+msgctxt "Caption"
+msgid "Modified on (last)"
+msgstr "Rekord módosítva (utoljára)"
+
+#: hu/lanoga/toolbox/vaadin/util/UiHelper.java:1190
+msgctxt "Caption"
+msgid "Show shutdown/restart warning on every UI"
+msgstr "Leáll. / újraind. figyelmeztetés mutatása (minden UI-on)"
+
+#~ msgid "From Email"
+#~ msgstr "Feladó e-mail"
+
+#~ msgid "To Email"
+#~ msgstr "Címzett e-mail"
+
+#~ msgid "Plain Text"
+#~ msgstr "Egyszerű szöveg"
+
+#~ msgctxt "Caption"
+#~ msgid "Group GID"
+#~ msgstr "Csoport GID"
+
+#~ msgctxt "Caption"
+#~ msgid "Approximate amount in USD (approx.)"
+#~ msgstr "Összeg USD-ben (megközelítőleg)"
+
+#~ msgctxt "Caption"
+#~ msgid "Status check frequency"
+#~ msgstr "Státusz ellenőrzés gyakorisága"
+
+#~ msgid "Group GID"
+#~ msgstr "Csoport GID"
+
+#~ msgid "Amount in USD (approx.)"
+#~ msgstr "Összeg USD-ben (megközelítőleg)"
+
+#~ msgid "Back Office notes"
+#~ msgstr "Back office jegyzetek"
+
+#~ msgid "Last status check request"
+#~ msgstr "Utolsó státusz ellenőrzési kérelem"
+
+#~ msgid "Status check frequency (seconds)"
+#~ msgstr "Státusz ellenőrzés gyakorisága"
+
+#~ msgctxt "Notification"
+#~ msgid "Wrong username/email!"
+#~ msgstr "Helytelen felhasználónév/email!"
+
+#~ msgctxt "Notification"
+#~ msgid "No user found!"
+#~ msgstr "Nem található felhasználó!"
+
+#~ msgctxt "Button"
+#~ msgid "See items"
+#~ msgstr "Elemek megtekintése"
+
+#~ msgctxt "Caption"
+#~ msgid "Customer data"
+#~ msgstr "Vásárlói adatok"
+
+#~ msgctxt "Caption"
+#~ msgid "System 1"
+#~ msgstr "Rendszer 1"
+
+#~ msgctxt "Caption"
+#~ msgid "System 2"
+#~ msgstr "Rendszer 2"
+
+#~ msgctxt "Caption"
+#~ msgid "Tenant settings"
+#~ msgstr "Tartomány beállítások"
+
+#~ msgctxt "Caption"
+#~ msgid "Tenant users"
+#~ msgstr "Tartomány felhasználói"
+
+#~ msgctxt "Caption"
+#~ msgid "Users"
+#~ msgstr "Felhasználók"
+
+#~ msgctxt "Caption"
+#~ msgid "User settings"
+#~ msgstr "Felhasználói beállítások"
+
+#~ msgctxt "Button"
+#~ msgid "Run script"
+#~ msgstr "Script futtatása"
+
+#~ msgctxt "Caption"
+#~ msgid "Run script"
+#~ msgstr "Script futtatása"
+
+#~ msgctxt "Button"
+#~ msgid "Run Groovy script"
+#~ msgstr "Groovy script futtatása"
+
+#~ msgctxt "Caption"
+#~ msgid "Script"
+#~ msgstr "Script"
+
+#~ msgctxt "Caption"
+#~ msgid "Result"
+#~ msgstr "Eredmény"
+
+#~ msgctxt "Notification"
+#~ msgid "Script is empty"
+#~ msgstr "A script üres"
+
+#~ msgctxt "Caption"
+#~ msgid "Tenant"
+#~ msgstr "Tartomány"
+
+#~ msgctxt "Caption"
+#~ msgid "Forgotten password"
+#~ msgstr "Elfelejtett jelszó"
+
+#~ msgctxt "Caption"
+#~ msgid "Password"
+#~ msgstr "Jelszó"
+
+#~ msgctxt "Caption"
+#~ msgid "Two-Step verification"
+#~ msgstr "Kétlépcsős azonosítás"
+
+#~ msgctxt "Button"
+#~ msgid "Lost password"
+#~ msgstr "Elfelejtett jelszó"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Locked by"
+#~ msgstr "Zároló"
+
+#~ msgctxt "Caption"
+#~ msgid "Record"
+#~ msgstr "Rekord"
+
+#~ msgctxt "Caption"
+#~ msgid "DBMSID"
+#~ msgstr "DBMSID"
+
+#~ msgctxt "Tooltip"
+#~ msgid "count: "
+#~ msgstr "számláló: "
+
+#~ msgctxt "Caption"
+#~ msgid "Assigned element"
+#~ msgstr "Hozzárendelt elem"
+
+#~ msgctxt "Caption"
+#~ msgid "Files for every element (auto. assignment)"
+#~ msgstr "Fájlok minden elemhez (automatikus hozzárendelés)"
+
+#~ msgctxt "Placeholder"
+#~ msgid "no automatic assignment"
+#~ msgstr "nincs automatikus hozzárendelés"
+
+#~ msgctxt "Placeholder"
+#~ msgid "file per element"
+#~ msgstr "fájl elemenként"
+
+#~ msgctxt "Placeholder"
+#~ msgid "total"
+#~ msgstr "összesen"
+
+#~ msgctxt "Notification"
+#~ msgid "Necessary file count"
+#~ msgstr "Szükséges fájl szám"
+
+#~ msgctxt "Button"
+#~ msgid "Assign selected"
+#~ msgstr "KIjelöltek hozzárendelése"
+
+#~ msgctxt "Button"
+#~ msgid "View picture"
+#~ msgstr "Kép megtekintése"
+
+#~ msgctxt "Title"
+#~ msgid "Assign"
+#~ msgstr "Hozzárendelés"
+
+#~ msgctxt "Button"
+#~ msgid "Assign"
+#~ msgstr "Hozzárendelés"
+
+#~ msgctxt "Tooltip"
+#~ msgid "Current count: "
+#~ msgstr "Jelenlegi fájlok száma: "
+
+#~ msgctxt "Notification"
+#~ msgid "Please first switch back to you default tenant!"
+#~ msgstr "Kérjük előbb váltson vissza az eredeti tartományra!"
+
+#~ msgctxt "Notification"
+#~ msgid ""
+#~ "You have the permission to use this feature, but the administrator hasn't "
+#~ "set the tenants you can see, yet."
+#~ msgstr ""
+#~ "Ön rendelkezik megfelelő jogosultsággal, de az adminisztrátor még nem "
+#~ "állította be, hogy mely tartományokra láthat rá."
+
+#~ msgctxt "Caption"
+#~ msgid "Your default tenant is: "
+#~ msgstr "Az alapértelmezett tartománya: "
+
+#~ msgctxt "Button"
+#~ msgid "Generate and copy password"
+#~ msgstr "Jelszó generálása és másolása"
+
+#~ msgctxt "Title"
+#~ msgid "Login"
+#~ msgstr "Bejelentkezés"
+
+#~ msgctxt "Caption"
+#~ msgid "Targets"
+#~ msgstr "Címzettek"
+
+#~ msgctxt "Caption"
+#~ msgid "To-do"
+#~ msgstr "Teendő"
+
+#~ msgctxt "Button"
+#~ msgid "Add new row"
+#~ msgstr "Új sor hozzáadása"
+
+#~ msgctxt "Notification"
+#~ msgid "The field exceeds the maximal character count"
+#~ msgstr "A mező értéke meghaladja a maximális karakterszámot"
+
+#~ msgctxt "Caption"
+#~ msgid "Sent by"
+#~ msgstr "Küldő"
+
+#~ msgctxt "Caption"
+#~ msgid "To-Do"
+#~ msgstr "Teendő"
+
+#~ msgctxt "Caption"
+#~ msgid "Automatic"
+#~ msgstr "Automatikus"
+
+#~ msgctxt "Caption"
+#~ msgid "Sender"
+#~ msgstr "Küldő"
+
+#~ msgctxt "Caption"
+#~ msgid "Sent on"
+#~ msgstr "Küldés ideje"
+
+#~ msgctxt "Caption"
+#~ msgid "My profile"
+#~ msgstr "Profilom"
+
+#~ msgctxt "Button"
+#~ msgid "Modify password"
+#~ msgstr "Jelszó módosítása"
+
+#~ msgctxt "Description"
+#~ msgid "Modify"
+#~ msgstr "Módosítás"
+
+#~ msgctxt "Caption"
+#~ msgid "Are you sure you want to delete it?"
+#~ msgstr "Biztos benne, hogy törölni akarja?"
+
+#~ msgctxt "Caption"
+#~ msgid "file count limit reached"
+#~ msgstr "a maximális fájl szám elérve"
+
+#~ msgctxt "Caption"
+#~ msgid "Admin UI"
+#~ msgstr "Admin felület"
+
+#~ msgctxt "Caption"
+#~ msgid "Super Admin UI"
+#~ msgstr "Super Admin felület"
+
+#, fuzzy
+#~| msgctxt "Caption"
+#~| msgid "Szerkesztés"
+#~ msgctxt "Button"
+#~ msgid "Mező szerkesztése"
+#~ msgstr "Modify"
+
+#, fuzzy
+#~| msgctxt "Caption"
+#~| msgid "Szerkesztés"
+#~ msgctxt "Title"
+#~ msgid "Mező szerkesztése ("
+#~ msgstr "Modify"
+
+#, fuzzy
+#~| msgctxt "Button"
+#~| msgid "Hozzáadás"
+#~ msgctxt "Button"
+#~ msgid "Új sor hozzáadása"
+#~ msgstr "Add"
+
+#, fuzzy
+#~| msgid ""
+#~ msgctxt "Notification"
+#~ msgid ""
+#~ msgstr ""
+#~ "Project-Id-Version: \n"
+#~ "POT-Creation-Date: 2018-05-24 10:51+0200\n"
+#~ "PO-Revision-Date: 2018-05-24 10:55+0200\n"
+#~ "Last-Translator: \n"
+#~ "Language-Team: \n"
+#~ "Language: en\n"
+#~ "MIME-Version: 1.0\n"
+#~ "Content-Type: text/plain; charset=UTF-8\n"
+#~ "Content-Transfer-Encoding: 8bit\n"
+#~ "X-Generator: Poedit 2.2\n"
+#~ "X-Poedit-Basepath: ..\n"
+#~ "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#~ "X-Poedit-KeywordsList: ;I.trc:1c,2\n"
+#~ "X-Poedit-SearchPath-0: .\n"
+
+#, fuzzy
+#~| msgctxt "Button"
+#~| msgid "Hozzáadás"
+#~ msgctxt "Button"
+#~ msgid "Új nyelv hozzáadása"
+#~ msgstr "Add"
+
+#~ msgctxt "Caption"
+#~ msgid "Hozzáadás"
+#~ msgstr "Add"
+
+#~ msgctxt "Caption"
+#~ msgid "Szerkesztés"
+#~ msgstr "Modify"
+
+#, fuzzy
+#~| msgctxt "Caption"
+#~| msgid "Biztos, hogy törölni szeretné?"
+#~ msgctxt "Caption"
+#~ msgid "Biztosan törölni szeretné?"
+#~ msgstr "Are you sure you want to delete this?"
+
+#~ msgctxt "Caption"
+#~ msgid "Megtekintés"
+#~ msgstr "View"
+
+#, fuzzy
+#~| msgctxt "Button"
+#~| msgid "Bejelentkezés"
+#~ msgctxt "Button"
+#~ msgid "Kijelentkezés"
+#~ msgstr "Login"
+
+#, fuzzy
+#~| msgctxt "Notification"
+#~| msgid "Hibás felhasználónév vagy jelszó!"
+#~ msgctxt "Notification"
+#~ msgid "Hibás felhasználónév, vagy jelszó!"
+#~ msgstr "Invalid username or password!"
+
+#~ msgctxt "Button"
+#~ msgid "Bejelentkezés"
+#~ msgstr "Login"
+
+#~ msgctxt "Button"
+#~ msgid "Bejelentkezés Facebookkal"
+#~ msgstr "Sign in with Facebook"
+
+#~ msgctxt "Button"
+#~ msgid "Elfelejtett jelszó"
+#~ msgstr "Forgotten password"
+
+#, fuzzy
+#~| msgctxt "Button"
+#~| msgid "Elfelejtett jelszó"
+#~ msgctxt "Button"
+#~ msgid "Új jelszó"
+#~ msgstr "Forgotten password"
+
+#, fuzzy
+#~| msgctxt "Caption"
+#~| msgid "Megtekintés"
+#~ msgctxt "Button"
+#~ msgid "Mentés"
+#~ msgstr "View"
+
+#~ msgctxt "BackLinkMessage"
+#~ msgid "Vissza a főoldalra"
+#~ msgstr "Back to the main page"
+
+#~ msgctxt "Caption"
+#~ msgid "Név"
+#~ msgstr "Name"
+
+#~ msgctxt "Caption"
+#~ msgid "Engedélyezett"
+#~ msgstr "Enabled"
+
+#~ msgctxt "Caption"
+#~ msgid "Telefon"
+#~ msgstr "Phone"
+
+#, fuzzy
+#~| msgctxt "Notification"
+#~| msgid "Hibás felhasználónév vagy jelszó!"
+#~ msgctxt "Notification"
+#~ msgid "Hibás felhasználónév vagy jelszó"
+#~ msgstr "Invalid username or password!"
+
+#~ msgctxt "ValidationError"
+#~ msgid "Nem szám!"
+#~ msgstr "Not a number!"
+
+#~ msgctxt "Button"
+#~ msgid "Törlés"
+#~ msgstr "Delete"
+
+#~ msgctxt "Button"
+#~ msgid "Bezárás"
+#~ msgstr "Close"
+
+#~ msgctxt "Caption"
+#~ msgid "Copyright © "
+#~ msgstr "Copyright © "
+
+#~ msgctxt "Caption"
+#~ msgid "Tutorial"
+#~ msgstr "Tutorial"
+
+#~ msgctxt "Notification"
+#~ msgid "Hozzáadva."
+#~ msgstr "Added."
+
+#~ msgctxt "Button"
+#~ msgid "Módosítás"
+#~ msgstr "Modify"
+
+#~ msgctxt "Notification"
+#~ msgid "Módosítva."
+#~ msgstr "Modified."
+
+#~ msgctxt "Notification"
+#~ msgid "Törölve."
+#~ msgstr "Deleted."

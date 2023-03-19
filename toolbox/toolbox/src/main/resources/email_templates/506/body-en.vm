@@ -1,0 +1,16 @@
+<p>Dear $recipient!</p>
+
+<p><br></p>
+
+<p>A password change request has been created using this email address. You can change your password with the following link: $data</p>
+<p>If you did not initiate this change, please ignore this message.</p>
+
+<p><br></p>
+
+<p><strong>Best regards,</strong></p>
+<p>$tenant</p>
+<p>$appname</p>
+
+<p><br></p>
+
+<p>$currentDate</p>

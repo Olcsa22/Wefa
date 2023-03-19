@@ -1,0 +1,7 @@
+UPDATE email_template
+SET templ_content = '{"en":"<p>Dear $recipient!</p><p><br></p><p>Your account has been created.</p><p>You can access it with this password: $data</p><p><strong>Login: </strong>$url</p><p><br></p><p><strong>Best regards,</strong></p><p>$tenant</p><p>$appname</p>", "hu":"<p> Tisztelt $recipient!</p><p><br></p><p>Felhasználói fiókja sikeresen elkészült.</p><p>A következő jelszóval be tud jelentkezni: $data</p><p><strong>Bejelentkezés: </strong>$url</p><p><br></p><p><strong>Tisztelettel,</strong></p><p>$tenant</p><p>$appname</p>"}'
+WHERE id = 1 AND templ_code = 500;
+--
+UPDATE email_template
+SET templ_content = '{"en":"<p>Dear $recipient!</p><p><br></p><p>A new user has registered: $data.</p><p>If you would like to enable this user, please log in and check the user section.</p><p><strong>Login: </strong>$url</p><p><br></p><p><strong>Best regards,</strong></p><p>$tenant</p><p>$appname</p><p><br></p><p>$currentDate</p>", "hu":"<p>Tisztelt $recipient!</p><p><br></p><p>Az alábbi felhasználó regisztrált a rendszerbe: $data.</p><p>A felhasználó engedélyezéséhez jelentkezzen be a felületre.</p><p><strong>Bejelentkezés: </strong>$url</p><p><br></p><p><strong>Tisztelettel,</strong></p><p>$tenant</p><p>$appname</p><p><br></p><p>$currentDate</p>"}'
+WHERE id = 2 AND templ_code = 502;

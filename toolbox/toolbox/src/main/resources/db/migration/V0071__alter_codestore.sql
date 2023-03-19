@@ -1,0 +1,1 @@
+CREATE INDEX ON code_store_item (LOWER(command));

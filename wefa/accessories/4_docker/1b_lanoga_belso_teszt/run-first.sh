@@ -1,0 +1,1 @@
+docker run -d -m 2048m -p 1092:80 -p 443:443 -p 5432:5432 -v /opt/docker-data/db:/var/lib/postgresql/data -v /opt/docker-data/user-home:/data --name wefa1 --restart unless-stopped lanoga/wefa

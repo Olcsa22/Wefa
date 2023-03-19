@@ -1,0 +1,1 @@
+ALTER TABLE quick_contact RENAME COLUMN partner_name TO company_name;
