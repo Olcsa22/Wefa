@@ -165,7 +165,6 @@ public class ActivitiHelperService {
 	@Secured(ToolboxSysKeys.UserAuth.ROLE_ADMIN_STR)
 	public void deleteProcessDefinitionById(final String processDefinitionId) {
 
-		// TODO: ez pontosan mit csinál, a releváns (korábban esetleg végigfutott, vagy épp futó) processInstance-okkal mi lesz?
 
 		this.repositoryService.deleteDeployment(processDefinitionId);
 	}

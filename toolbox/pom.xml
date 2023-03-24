@@ -34,21 +34,7 @@
 		<module>toolbox-parent</module>
 
 		<module>toolbox</module>
-		
-		<!-- <module>toolbox-lucene</module> -->
-		<!-- <module>toolbox-selenium</module> -->
-		<!-- <module>toolbox-wspoke</module> -->
-		<!-- <module>toolbox-on-premise-helper</module> -->
-		<!-- <module>toolbox-xmpp/client-helper</module> -->
-		<module>toolbox-test/toolbox-test-helper</module>
-		
-		<!-- <module>toolbox-payment/toolbox-payment-redis-com</module> -->
-		<module>toolbox-payment/toolbox-payment-cib</module>
-		<!-- <module>toolbox-payment/toolbox-payment-barion</module> -->
-		<!-- <module>toolbox-payment/toolbox-payment-paypal</module> -->
-		<!-- <module>toolbox-payment/toolbox-payment-payu</module> -->
-		<module>toolbox-payment/toolbox-payment-simplepay2</module>
-		<!-- <module>toolbox-payment/toolbox-payment-hosted</module> -->
+
 					
 	</modules>
 

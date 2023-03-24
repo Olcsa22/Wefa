@@ -145,7 +145,7 @@ public class GroovyTaskFormDialog extends Window {
 				return ToolboxGroovyHelper.buildClassInstance(this.stepFormModelGroovyScriptStr);
 			}, null);
 			crudFormComponent.setDomainObject((ToolboxPersistable) domainObject);
-			crudFormComponent.setCrudOperation(CrudOperation.UPDATE); // itt ez nem az, mint normálisan lenne egy normál CRUD-ban... egyelőre az UPDATE és a READ kell csak
+			crudFormComponent.setCrudOperation(CrudOperation.UPDATE);
 			crudFormComponent.setCrudAction(v -> {
 
 				// ---

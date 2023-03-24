@@ -32,8 +32,7 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 public class ProcessDefinitionEditorView extends HorizontalLayout implements View {
-	
-	// FIXME: a task név (a task elemre kattintva egyszeres kattintással lehet beírni) mentése megy, de a karakterkódolás elromlik
+
 
 	private final ActivitiHelperService activitiHelperService;
 

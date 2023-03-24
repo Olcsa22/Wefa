@@ -37,7 +37,6 @@ import lombok.extern.slf4j.Slf4j;
  */
 @com.vaadin.annotations.JavaScript({ "../../../webjars/jquery/1.12.4/jquery.min.js", "../../../s/procdef/bower_components/bpmn-js/dist/bpmn-modeler.min.js", "../../../s/procdef/wfeditor.js" })
 
-// TODO: wfeditor.js rename to procdefeditor.js (vagy hasonló)
 
 @Slf4j
 public class ProcessDefinitionEditorComponent extends com.vaadin.ui.AbstractJavaScriptComponent {
@@ -239,7 +238,7 @@ public class ProcessDefinitionEditorComponent extends com.vaadin.ui.AbstractJava
 
 		log.debug(String.format("wfeSaveWorkflowClick, arguments: %s", jsonArrayToString(arguments)));
 
-		// this.checkWfIdEquality(arguments.getString(0)); // TODO: ez mégis kell mindhez, mit van, ha több JS callback is van, vagy nem (elvileg nem, mert egy browser fülön egyszerre nem engedünk többet eleve)?
+		// this.checkWfIdEquality(arguments.getString(0)); //
 
 		boolean isSuccessful = false;
 
@@ -261,7 +260,7 @@ public class ProcessDefinitionEditorComponent extends com.vaadin.ui.AbstractJava
 
 			if (!validationErrors.isEmpty()) {
 				log.warn("wfeSaveWorkflowClick validation error: " + validationErrors);
-				Notification.show(I.trc("Notification", "Mentés hiba (folyamanat definíció invalid)!"), Type.WARNING_MESSAGE);
+				Notification.show(I.trc("Notification", "Mentés hiba (folyamat definíció hibás)!"), Type.WARNING_MESSAGE);
 			} else {
 
 				this.activitiHelperService.deployProcessDefinition(this.procDefKey, procDefName, bpmnXmlData, this.procDefGroovyScriptStrings);
