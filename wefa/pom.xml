@@ -109,9 +109,9 @@
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<configuration>
-					<!--descriptorRefs>
+					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
-					</descriptorRefs-->
+					</descriptorRefs>
 					<archive>
 						<manifest>
 							<mainClass>hu.lanoga.Start</mainClass>
